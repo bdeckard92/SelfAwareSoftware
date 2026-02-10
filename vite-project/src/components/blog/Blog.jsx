@@ -12,8 +12,8 @@ const Blog = () => {
     <div key={blog.episode}>
       {" "}
       <h3 onClick={() => showBlogBody(blog.episode)}>{blog.title}</h3>{" "}
-      {showBlogBody == blog.episode && (<div dangerouslySetInnerHTML={{__html: blog.body}}></div>)}
-     
+      {blogToShow === blog.episode && (<div dangerouslySetInnerHTML={{__html:blog.body}}></div>)}
+    
     </div>
   ));
   return (
