@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Blog.css";
-import blogList from "../../utils/blogs.js";
+import blogList from "../../utils/blogs.jsx";
 
 const Blog = () => {
   const [blogToShow, setBlogToShow] = useState(null);
@@ -11,10 +11,10 @@ const Blog = () => {
   const showBlogTitle = blogList.map((blog) => (
     <div key={blog.episode}>
       {" "}
-      <button type= 'button' onClick={() => showBlogBody(blog.episode)}>{blog.title}</button>{" "}
-      {/* Using dangerouslySetInnerHTML here as it is static coming from internal and not user injection. TODO: sanitize prior to allowing guest bloggers to enter */}
-      {blogToShow === blog.episode && (<div dangerouslySetInnerHTML={{__html:blog.body}}></div>)}
-    
+      <button type="button" onClick={() => showBlogBody(blog.episode)}>
+        {blog.title}
+      </button>{" "}
+      {blogToShow === blog.episode && blog.body}
     </div>
   ));
   return (
