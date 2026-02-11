@@ -7,7 +7,7 @@ const Blog = () => {
   const showBlogBody = (id) => {
     setBlogToShow((prev) => (prev === id ? null : id));
   };
-  console.log(blogToShow);
+
   const showBlogTitle = blogList.map((blog) => (
     <div key={blog.episode}>
       {" "}
