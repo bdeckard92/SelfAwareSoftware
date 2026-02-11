@@ -11,7 +11,7 @@ const Blog = () => {
   const showBlogTitle = blogList.map((blog) => (
     <div key={blog.episode}>
       {" "}
-      <h3 onClick={() => showBlogBody(blog.episode)}>{blog.title}</h3>{" "}
+      <button type= 'button' onClick={() => showBlogBody(blog.episode)}>{blog.title}</button>{" "}
       {blogToShow === blog.episode && (<div dangerouslySetInnerHTML={{__html:blog.body}}></div>)}
     
     </div>
