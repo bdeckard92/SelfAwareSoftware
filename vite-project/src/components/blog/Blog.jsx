@@ -12,6 +12,7 @@ const Blog = () => {
     <div key={blog.episode}>
       {" "}
       <button type= 'button' onClick={() => showBlogBody(blog.episode)}>{blog.title}</button>{" "}
+      {/* Using dangerouslySetInnerHTML here as it is static coming from internal and not user injection. TODO: sanitize prior to allowing guest bloggers to enter */}
       {blogToShow === blog.episode && (<div dangerouslySetInnerHTML={{__html:blog.body}}></div>)}
     
     </div>
