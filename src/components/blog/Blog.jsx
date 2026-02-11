@@ -14,7 +14,7 @@ const Blog = () => {
       <button type="button" onClick={() => showBlogBody(blog.episode)}>
         {blog.title}
       </button>{" "}
-      {blogToShow === blog.episode && <div>{blog.body}</div>}
+      {blogToShow === blog.episode && blog.body}
     </div>
   ));
   return (
