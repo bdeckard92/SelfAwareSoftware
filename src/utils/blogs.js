@@ -1,5 +1,5 @@
-const blogList = [{"episode": 1,
-"title": "Three Questions to get better feedback as a Software Engineer.","body":`  <article><header>
+const blogList = [{episode: 1,
+title: "Three Questions to get better feedback as a Software Engineer.",body:(<article><header>
       <h1>Asking for Better Feedback as a Software Engineer</h1>
     </header>
 
@@ -165,8 +165,8 @@ const blogList = [{"episode": 1,
       If you want to grow intentionally, learning how to ask for — and process — feedback is one of the
       highest-leverage skills you can build. 
     </p>
-  </article>`
-}, {"episode": 2, "title": "Understanding Expectations for Software Engineer levels", "body": `<article>
+  </article>)
+}, {episode: 2, title: "Understanding Expectations for Software Engineer levels", body: (<article>
     <header>
       <h1>Understanding Software Engineering Levels and Expectations</h1>
     </header>
@@ -392,7 +392,7 @@ const blogList = [{"episode": 1,
       In the next episode, I’ll go deeper into mindfulness, self-assessment, and how to process feedback without being overly harsh or defensive —
       a critical skill if you want to grow sustainably over time.
     </p>
-  </article>`}
+  </article>)}
  ]
 
  export default blogList;
