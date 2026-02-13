@@ -13,25 +13,27 @@ const VideoList = () => {
     }
   ];
 
-  let renderVideos = videos.map((video) => (
-    <li key={video.id}>
-        <p>{video.title}{" "}</p>  
+  let renderVideos = [...videos]
+    .sort((a, b) => b.id - a.id)
+    .map((video) => (
+    <li key={video.id} className="video-card">
+      <h3>{video.title}</h3>
+      <div className="video-frame-wrap">
       <iframe
-        width="560"
-        height="315"
         src={video.vUrl}
-        title="YouTube video player"
-        frameborder="0"
+        title={video.title}
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
       ></iframe>
+      </div>
     </li>
   ));
   return (
     <>
       <h2>Video Library</h2>
-      <ul>{renderVideos}</ul>
+      <ul className="video-list">{renderVideos}</ul>
     </>
   );
 };
