@@ -7,6 +7,10 @@ const VideoList = () => {
       id: 1,
       title: "Getting Better Feedback",
     },
+    {vUrl: "https://www.youtube.com/embed/qJa2xHA87eM?si=aUr-xoksKGLc5TDB",
+      id: 2,
+      title: "Expectations at Each Software Engineer Level"
+    }
   ];
 
   let renderVideos = videos.map((video) => (
