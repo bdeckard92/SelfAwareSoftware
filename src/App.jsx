@@ -16,8 +16,12 @@ function App() {
       return savedTheme;
     }
 
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    return prefersDark ? "dark" : "light";
+    if (typeof window !== "undefined" && typeof window.matchMedia === "function") {
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      return prefersDark ? "dark" : "light";
+    }
+
+    return "light";
   };
 
   const [theme, setTheme] = useState(getInitialTheme);
