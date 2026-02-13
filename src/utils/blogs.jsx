@@ -222,7 +222,7 @@ title: "Three Questions to get better feedback as a Software Engineer.",body:(<a
 
     <p>
       Rather than treating levels as exhaustive job descriptions, it’s more helpful to understand the
-      <strong> primary expectation each level is optimizing for</strong>.
+     {" "} <strong>primary expectation each level is optimizing for</strong>.
     </p>
 
     <p>Below is a simplified, pattern-based view that holds across many organizations.</p>
