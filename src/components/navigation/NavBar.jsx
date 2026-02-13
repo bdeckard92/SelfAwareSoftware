@@ -19,7 +19,7 @@ const NavBar = ({ theme = 'light', onToggleTheme = () => {} }) => {
                 </li>
                 <li>
                   <button className="theme-toggle" type="button" onClick={onToggleTheme}>
-                    {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+                    {theme === 'dark' ? 'Go Towards the Light' : 'Come to the Dark Side'}
                   </button>
                 </li>
               </ul>
