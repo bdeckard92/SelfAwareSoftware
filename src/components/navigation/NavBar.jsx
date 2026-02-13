@@ -18,7 +18,13 @@ const NavBar = ({ theme = 'light', onToggleTheme = () => {} }) => {
                   <Link to="/blog">Blog Posts</Link>
                 </li>
                 <li>
-                  <button className="theme-toggle" type="button" onClick={onToggleTheme}>
+                  <button
+                    className="theme-toggle"
+                    type="button"
+                    onClick={onToggleTheme}
+                    aria-pressed={theme === 'dark'}
+                    aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+                  >
                     {theme === 'dark' ? 'Go Towards the Light' : 'Come to the Dark Side'}
                   </button>
                 </li>
