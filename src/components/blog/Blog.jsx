@@ -9,6 +9,18 @@ const Blog = () => {
     setBlogToShow((prev) => (prev === id ? null : id));
   };
 
+  const formatPublishDate = (dateCreated) => {
+    if (!dateCreated) {
+      return "Publish date unavailable";
+    }
+
+    return new Date(dateCreated).toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    });
+  };
+
   const getBlogSubtitle = (body) => {
     const articleChildren = body?.props?.children;
     const childrenArray = Array.isArray(articleChildren)
@@ -29,10 +41,19 @@ const Blog = () => {
       : "";
   };
 
-  const showBlogCards = blogList.map((blog) => (
+  const showBlogCards = [...blogList]
+    .sort((a, b) => {
+      const dateDelta = new Date(b.dateCreated || 0) - new Date(a.dateCreated || 0);
+      if (dateDelta !== 0) {
+        return dateDelta;
+      }
+      return b.episode - a.episode;
+    })
+    .map((blog) => (
     <section className="blog-card" key={blog.episode}>
       <h2 className="blog-card-title">{blog.title}</h2>
       <p className="blog-card-subtitle">{getBlogSubtitle(blog.body)}</p>
+      <p className="blog-card-date">Published {formatPublishDate(blog.dateCreated)}</p>
       <button
         className="blog-card-toggle"
         type="button"

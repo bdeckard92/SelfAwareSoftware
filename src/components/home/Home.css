@@ -9,6 +9,12 @@
 .home-logo {
   height: 18rem;
   width: auto;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.home-logo:hover {
+  filter: drop-shadow(0 0 2em #F6C85F);
 }
 
 .home-content {

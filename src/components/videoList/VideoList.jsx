@@ -1,17 +1,8 @@
 import './VideoList.css'
+import videos from '../../utils/videos.jsx'
 
 const VideoList = () => {
-  const videos = [
-    {
-      vUrl: "https://www.youtube.com/embed/vVGseqGSU8Y?si=-2u1cjtSWIXVcBiz",
-      id: 1,
-      title: "Getting Better Feedback",
-    },
-    {vUrl: "https://www.youtube.com/embed/qJa2xHA87eM?si=aUr-xoksKGLc5TDB",
-      id: 2,
-      title: "Expectations at Each Software Engineer Level"
-    }
-  ];
+  
 
   let renderVideos = [...videos]
     .sort((a, b) => b.id - a.id)

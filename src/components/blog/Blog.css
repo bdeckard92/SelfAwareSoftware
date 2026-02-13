@@ -27,6 +27,12 @@
   font-weight: 500;
 }
 
+.blog-card-date {
+  margin: 0.4rem 0 0;
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
 .blog-card-toggle {
   margin-top: 0.75rem;
 }

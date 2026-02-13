@@ -5,7 +5,7 @@ import './Home.css'
 const Home = () => {
     return (
     <section className="home-hero">
-      <a href="https://youtu.be/vVGseqGSU8Y" target="_blank" rel="noreferrer">
+      <a href="https://www.youtube.com/@bobdeckard8341" target="_blank" rel="noreferrer">
         <img src={logo} className="home-logo" alt="Self Aware Logo" />
       </a>
       <div className="home-content">

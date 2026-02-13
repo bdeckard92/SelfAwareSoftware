@@ -1,4 +1,5 @@
 const blogList = [{episode: 1,
+dateCreated: "2026-02-05",
 title: "Three Questions to get better feedback as a Software Engineer.",body:(<article><header>
       <h1>Asking for Better Feedback as a Software Engineer</h1>
     </header>
@@ -166,7 +167,7 @@ title: "Three Questions to get better feedback as a Software Engineer.",body:(<a
       highest-leverage skills you can build. 
     </p>
   </article>)
-}, {episode: 2, title: "Understanding Expectations for Software Engineer levels", body: (<article>
+}, {episode: 2, dateCreated: "2026-02-12", title: "Understanding Expectations for Software Engineer levels", body: (<article>
     <header>
       <h1>Understanding Software Engineering Levels and Expectations</h1>
     </header>
