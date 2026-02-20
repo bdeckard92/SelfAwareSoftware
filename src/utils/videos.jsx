@@ -9,7 +9,10 @@
       id: 2,
       title: "Expectations at Each Software Engineer Level",
       datePublished: "2026-02-11"
-    }
+    },
+    { vUrl: "https://www.youtube.com/embed/Kxvc6qighpM?si=1dhF_P_Ik7fiXQZr", id: 3, title: "How to Recieve Improvement Feedback as a Software Engineer", datePublished: "2026-02-17" }
   ];
 
   export default videos;
+
+  
