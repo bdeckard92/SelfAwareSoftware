@@ -740,6 +740,204 @@ const blogList = [
     
     ),
   },
+  {episode: 4,
+    dateCreated: "2026-02-24",
+    title: "From Feedback to Action:",
+    body: (<article>
+    <header>
+      <h1>Setting SMART Goals as a Software Engineer</h1>
+      <p>
+        Most software engineers say they want to grow.
+      </p>
+      <p>
+        They want to improve their system design skills.
+        They want to communicate better.
+        They want to operate at a senior level.
+        They want to get promoted.
+      </p>
+      <p>
+        But vague goals produce vague progress.
+      </p>
+      <p>
+        If you’ve ever received meaningful feedback and then struggled to translate it into action, you’re not alone.
+        Feedback gives you direction. What most engineers lack is a clear way to turn that direction into measurable growth.
+      </p>
+      <p>
+        That’s where SMART goals can help — if they’re applied correctly.
+      </p>
+    </header>
+
+    <section>
+      <h2>SMART Is a Structure — Not the Goal Itself</h2>
+      <p>
+        SMART stands for:
+      </p>
+      <ul>
+        <li><strong>Specific</strong></li>
+        <li><strong>Measurable</strong></li>
+        <li><strong>Achievable</strong></li>
+        <li><strong>Relevant</strong></li>
+        <li><strong>Time-bound</strong></li>
+      </ul>
+      <p>
+        Most people have heard this before. The problem isn’t knowing the acronym.
+        The problem is applying it to behaviors that actually drive career growth.
+      </p>
+      <p>
+        Just because a goal checks the SMART boxes doesn’t mean it’s a good goal.
+      </p>
+      <p>
+        For example:
+      </p>
+      <blockquote>
+        <p>
+          “Over the next four weeks, I will close 15 Jira tickets per sprint to increase productivity.”
+        </p>
+      </blockquote>
+      <p>
+        This is technically SMART. It’s specific. It’s measurable. It’s time-bound.
+        But it may not align with the level you’re trying to grow into.
+      </p>
+      <p>
+        More output doesn’t automatically mean more impact.
+      </p>
+      <p>
+        If you’re trying to operate at a senior level, optimizing for ticket velocity may reinforce junior-level behavior.
+      </p>
+      <p>
+        SMART is a framework. Alignment determines quality.
+      </p>
+    </section>
+
+    <section>
+      <h2>Turning Feedback Into Action</h2>
+      <p>
+        The key is to connect your SMART goal directly to the feedback you’ve received and the expectations of the level you’re growing toward.
+      </p>
+      <p>
+        Let’s look at three examples.
+      </p>
+    </section>
+
+    <section>
+      <h2>Example 1: Improving Communication</h2>
+      <p><strong>Feedback:</strong> “You need to communicate more clearly in meetings.”</p>
+      <p><strong>Vague goal:</strong> “I want to improve my communication.”</p>
+      <p><strong>Stronger SMART goal:</strong></p>
+      <blockquote>
+        <p>
+          “Over the next six weeks, in every sprint demo I lead, I will summarize tradeoffs and risks at the end of my presentation,
+          and I will ask my manager for feedback on clarity after at least two of those demos.”
+        </p>
+      </blockquote>
+      <p>
+        Now we have a clear behavior, a measurable feedback loop, a defined timeframe, and alignment with senior-level expectations.
+        That’s not just activity. That’s deliberate practice.
+      </p>
+    </section>
+
+    <section>
+      <h2>Example 2: Growing in System Design</h2>
+      <p><strong>Feedback:</strong> “You need to strengthen your system design skills.”</p>
+      <p><strong>Vague goal:</strong> “Get better at system design.”</p>
+      <p><strong>Stronger SMART goal:</strong></p>
+      <blockquote>
+        <p>
+          “Over the next quarter, I will proactively draft one design proposal for an upcoming feature,
+          request written feedback from at least one senior or staff engineer, and document the tradeoffs I considered.”
+        </p>
+      </blockquote>
+      <p>
+        This goal builds design clarity, exposure to senior-level thinking, explicit feedback, and documented reasoning.
+        You’re practicing the behavior of senior engineers — not waiting for the title.
+      </p>
+    </section>
+
+    <section>
+      <h2>Example 3: Increasing Team Leverage</h2>
+      <p><strong>Feedback:</strong> “You need to have more impact beyond your own work.”</p>
+      <p><strong>Vague goal:</strong> “Be more impactful.”</p>
+      <p><strong>Stronger SMART goal:</strong></p>
+      <blockquote>
+        <p>
+          “For the next eight weeks, I will mentor one junior engineer during code reviews by leaving at least two explanatory comments per review,
+          and I will ask them whether the feedback was clear and helpful.”
+        </p>
+      </blockquote>
+      <p>
+        This creates measurable leverage — not busyness, not volume. Leverage.
+      </p>
+    </section>
+
+    <section>
+      <h2>The Three Most Common Goal-Setting Mistakes</h2>
+      <ol>
+        <li>
+          <strong>Outcome-only goals</strong><br />
+          “I want to get promoted.” Promotion is not a behavior.
+        </li>
+        <li>
+          <strong>Identity-based goals</strong><br />
+          “I want to be more strategic.” Strategy shows up in decisions, tradeoffs, and communication.
+        </li>
+        <li>
+          <strong>No feedback loop</strong><br />
+          If you never measure or revisit your goal, it disappears.
+        </li>
+      </ol>
+      <p>
+        Growth requires observable behavior and feedback.
+      </p>
+    </section>
+
+    <section>
+      <h2>A Simple Template You Can Use</h2>
+      <p>
+        If you’re not sure how to structure your next growth experiment, try this:
+      </p>
+      <blockquote>
+        <p>
+          Over the next ___ weeks, I will practice ___ behavior, measure it by ___, because it aligns with ___ expectation.
+        </p>
+      </blockquote>
+      <p>
+        Example:
+      </p>
+      <blockquote>
+        <p>
+          Over the next eight weeks, I will lead two cross-team technical discussions and ask for feedback on how clearly I framed tradeoffs,
+          because staff-level expectations include influencing across teams.
+        </p>
+      </blockquote>
+      <p>
+        That’s clear. That’s measurable. That’s aligned.
+      </p>
+    </section>
+
+    <section>
+      <h2>Growth Is Iterative</h2>
+      <p>
+        You don’t need ten goals. You need one or two deliberate growth experiments at a time.
+      </p>
+      <p>
+        Run them for six to eight weeks. Measure. Reflect. Adjust.
+      </p>
+      <p>
+        Engineering careers don’t stall because of lack of effort. They stall because of lack of specificity.
+      </p>
+      <p>
+        Turn feedback into behavior. Turn behavior into measurable practice. Turn practice into progress.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        If you found this helpful, you can watch the full episode on setting SMART goals for software engineers on my YouTube channel,
+        where I walk through these examples in more detail.
+      </p>
+    </footer>
+  </article>)
+  }
 ];
 
 export default blogList;
