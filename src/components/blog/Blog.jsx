@@ -1,9 +1,15 @@
 import { useState } from "react";
 import "./Blog.css";
 import blogList from "../../utils/blogs.jsx";
+import { filterByKeywords } from "../../utils/filterByKeywords";
+import { sortByDate, SORT_ORDER } from "../../utils/sortByDate";
+import KeywordSearch from "../search/KeywordSearch";
+import SortToggle from "../sort/SortToggle";
 
 const Blog = () => {
   const [blogToShow, setBlogToShow] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [sortOrder, setSortOrder] = useState(SORT_ORDER.NEWEST);
 
   const showBlogBody = (id) => {
     setBlogToShow((prev) => (prev === id ? null : id));
@@ -41,14 +47,16 @@ const Blog = () => {
       : "";
   };
 
-  const showBlogCards = [...blogList]
-    .sort((a, b) => {
-      const dateDelta = new Date(b.dateCreated || 0) - new Date(a.dateCreated || 0);
-      if (dateDelta !== 0) {
-        return dateDelta;
-      }
-      return b.episode - a.episode;
-    })
+  const filteredBlogs = filterByKeywords(blogList, searchTerm, [
+    "title",
+    "body",
+    "dateCreated",
+    "episode",
+  ]);
+
+  const sortedBlogs = sortByDate(filteredBlogs, "dateCreated", sortOrder);
+
+  const showBlogCards = [...sortedBlogs]
     .map((blog) => (
     <section className="blog-card" key={blog.episode}>
       <h2 className="blog-card-title">{blog.title}</h2>
@@ -69,6 +77,13 @@ const Blog = () => {
   return (
     <>
       <h1>Blog Posts</h1>
+      <KeywordSearch
+        value={searchTerm}
+        onChange={setSearchTerm}
+        ariaLabel="Search blog posts"
+        placeholder="Search blog posts"
+      />
+      <SortToggle value={sortOrder} onChange={setSortOrder} />
       <div className="blog-list">{showBlogCards}</div>
       {activeBlog && <section className="blog-reader">{activeBlog.body}</section>}
     </>
