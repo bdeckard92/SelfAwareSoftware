@@ -1,10 +1,15 @@
+import { useState } from 'react'
 import './VideoList.css'
 import videos from '../../utils/videos.jsx'
+import { filterByKeywords } from '../../utils/filterByKeywords'
+import KeywordSearch from '../search/KeywordSearch'
 
 const VideoList = () => {
-  
+  const [searchTerm, setSearchTerm] = useState('')
 
-  let renderVideos = [...videos]
+  const filteredVideos = filterByKeywords(videos, searchTerm, ['title'])
+
+  let renderVideos = [...filteredVideos]
     .sort((a, b) => b.id - a.id)
     .map((video) => (
     <li key={video.id} className="video-card">
@@ -24,6 +29,12 @@ const VideoList = () => {
   return (
     <>
       <h2>Video Library</h2>
+      <KeywordSearch
+        ariaLabel="Search videos"
+        placeholder="Search videos"
+        value={searchTerm}
+        onChange={setSearchTerm}
+      />
       <ul className="video-list">{renderVideos}</ul>
     </>
   );

@@ -1,9 +1,12 @@
 import { useState } from "react";
 import "./Blog.css";
 import blogList from "../../utils/blogs.jsx";
+import { filterByKeywords } from "../../utils/filterByKeywords";
+import KeywordSearch from "../search/KeywordSearch";
 
 const Blog = () => {
   const [blogToShow, setBlogToShow] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const showBlogBody = (id) => {
     setBlogToShow((prev) => (prev === id ? null : id));
@@ -41,7 +44,14 @@ const Blog = () => {
       : "";
   };
 
-  const showBlogCards = [...blogList]
+  const filteredBlogs = filterByKeywords(blogList, searchTerm, [
+    "title",
+    "body",
+    "dateCreated",
+    "episode",
+  ]);
+
+  const showBlogCards = [...filteredBlogs]
     .sort((a, b) => {
       const dateDelta = new Date(b.dateCreated || 0) - new Date(a.dateCreated || 0);
       if (dateDelta !== 0) {
@@ -69,6 +79,12 @@ const Blog = () => {
   return (
     <>
       <h1>Blog Posts</h1>
+      <KeywordSearch
+        value={searchTerm}
+        onChange={setSearchTerm}
+        ariaLabel="Search blog posts"
+        placeholder="Search blog posts"
+      />
       <div className="blog-list">{showBlogCards}</div>
       {activeBlog && <section className="blog-reader">{activeBlog.body}</section>}
     </>
