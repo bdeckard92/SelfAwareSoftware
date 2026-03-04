@@ -55,6 +55,16 @@ describe('Blog', () => {
     expect(screen.queryByRole('heading', { name: /career growth for engineers/i })).not.toBeInTheDocument();
   });
 
+  it('happy path: filters blog cards by body keyword', () => {
+    render(<Blog />);
+    const searchInput = screen.getByRole('searchbox', { name: /search blog posts/i });
+
+    fireEvent.change(searchInput, { target: { value: 'body two' } });
+
+    expect(screen.getByRole('heading', { name: /career growth for engineers/i })).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: /react performance tips/i })).not.toBeInTheDocument();
+  });
+
   it('sad path: shows no blog cards for a non-matching keyword', () => {
     render(<Blog />);
     const searchInput = screen.getByRole('searchbox', { name: /search blog posts/i });
