@@ -29,6 +29,19 @@ vi.mock('../../utils/blogs.jsx', () => ({
         </article>
       ),
     },
+    {
+      episode: 3,
+      title: 'Planning for Growth',
+      dateCreated: '2025-12-15',
+      body: (
+        <article>
+          <header>
+            <h1>Planning subtitle</h1>
+          </header>
+          <p>Body three</p>
+        </article>
+      ),
+    },
   ],
 }));
 
@@ -63,6 +76,36 @@ describe('Blog', () => {
 
     expect(screen.getByRole('heading', { name: /career growth for engineers/i })).toBeInTheDocument();
     expect(screen.queryByRole('heading', { name: /react performance tips/i })).not.toBeInTheDocument();
+  });
+
+  it('sad path: sanitizes script-like input while still allowing safe search text', () => {
+    render(<Blog />);
+    const searchInput = screen.getByRole('searchbox', { name: /search blog posts/i });
+
+    fireEvent.change(searchInput, { target: { value: '<script>react</script>' } });
+
+    expect(screen.getByRole('heading', { name: /react performance tips/i })).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: /career growth for engineers/i })).not.toBeInTheDocument();
+  });
+
+  it('happy path: toggles blog sort order from newest to oldest to oldest to newest', () => {
+    render(<Blog />);
+
+    const beforeToggle = screen.getAllByRole('heading', { level: 2 }).map((heading) => heading.textContent);
+    expect(beforeToggle).toEqual([
+      'Career Growth for Engineers',
+      'React Performance Tips',
+      'Planning for Growth',
+    ]);
+
+    fireEvent.click(screen.getByRole('button', { name: /sort:/i }));
+
+    const afterToggle = screen.getAllByRole('heading', { level: 2 }).map((heading) => heading.textContent);
+    expect(afterToggle).toEqual([
+      'Planning for Growth',
+      'React Performance Tips',
+      'Career Growth for Engineers',
+    ]);
   });
 
   it('sad path: shows no blog cards for a non-matching keyword', () => {

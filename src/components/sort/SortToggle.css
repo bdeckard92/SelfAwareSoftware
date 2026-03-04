@@ -1,0 +1,8 @@
+.sort-toggle {
+  display: block;
+  width: fit-content;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.82rem;
+  line-height: 1.15;
+}

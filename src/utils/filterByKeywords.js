@@ -1,3 +1,5 @@
+import { sanitizeSearchInput } from "./sanitizeSearchInput";
+
 const extractSearchableText = (value) => {
   if (value === null || value === undefined) {
     return "";
@@ -25,7 +27,7 @@ const extractSearchableText = (value) => {
 };
 
 export const filterByKeywords = (items, query, fields) => {
-  const normalizedQuery = query.toLowerCase().trim();
+  const normalizedQuery = sanitizeSearchInput(query).toLowerCase().trim();
 
   if (!normalizedQuery) {
     return items;

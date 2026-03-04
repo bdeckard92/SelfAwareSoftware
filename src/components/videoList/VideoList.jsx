@@ -2,15 +2,18 @@ import { useState } from 'react'
 import './VideoList.css'
 import videos from '../../utils/videos.jsx'
 import { filterByKeywords } from '../../utils/filterByKeywords'
+import { sortByDate, SORT_ORDER } from '../../utils/sortByDate'
 import KeywordSearch from '../search/KeywordSearch'
+import SortToggle from '../sort/SortToggle'
 
 const VideoList = () => {
   const [searchTerm, setSearchTerm] = useState('')
+  const [sortOrder, setSortOrder] = useState(SORT_ORDER.NEWEST)
 
   const filteredVideos = filterByKeywords(videos, searchTerm, ['title'])
+  const sortedVideos = sortByDate(filteredVideos, 'datePublished', sortOrder)
 
-  let renderVideos = [...filteredVideos]
-    .sort((a, b) => b.id - a.id)
+  let renderVideos = [...sortedVideos]
     .map((video) => (
     <li key={video.id} className="video-card">
       <h3>{video.title}</h3>
@@ -35,6 +38,7 @@ const VideoList = () => {
         value={searchTerm}
         onChange={setSearchTerm}
       />
+      <SortToggle value={sortOrder} onChange={setSortOrder} />
       <ul className="video-list">{renderVideos}</ul>
     </>
   );

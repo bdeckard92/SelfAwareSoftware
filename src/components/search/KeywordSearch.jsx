@@ -1,3 +1,5 @@
+import { sanitizeSearchInput } from "../../utils/sanitizeSearchInput";
+
 const KeywordSearch = ({ value, onChange, ariaLabel, placeholder }) => {
   return (
     <input
@@ -5,7 +7,7 @@ const KeywordSearch = ({ value, onChange, ariaLabel, placeholder }) => {
       aria-label={ariaLabel}
       placeholder={placeholder}
       value={value}
-      onChange={(event) => onChange(event.target.value)}
+      onChange={(event) => onChange(sanitizeSearchInput(event.target.value))}
     />
   );
 };
