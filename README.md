@@ -1,16 +1,107 @@
-# React + Vite
+# SelfAwareSoftware
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SelfAwareSoftware is a React + Vite web app for "The Self Aware Software Engineer" content platform.
+It provides:
 
-Currently, two official plugins are available:
+- A home page introducing the project and content focus.
+- A videos page to explore video content.
+- A blog page with keyword search and date sorting.
+- An about page with background, coaching philosophy, and context.
+- A persisted light/dark theme toggle.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- React
+- React Router
+- Vite
+- Vitest + React Testing Library
+- ESLint
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started Locally
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js 20.x or newer (LTS recommended)
+- npm (comes with Node.js)
+
+### Clone the repository
+
+```bash
+git clone <your-repo-url>
+cd SelfAwareSoftware
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the app in local development
+
+```bash
+npm run dev
+```
+
+Vite will print a local URL (usually `http://localhost:5173`) in the terminal.
+
+## Scripts
+
+- `npm run dev`: Start the Vite dev server.
+- `npm run build`: Build production assets.
+- `npm run preview`: Preview the production build locally.
+- `npm run lint`: Run ESLint across the project.
+- `npm test`: Run tests with Vitest.
+
+## Running Tests
+
+Run the full test suite:
+
+```bash
+npm test
+```
+
+Run tests one time (non-watch mode):
+
+```bash
+npm test -- --run
+```
+
+## How to Contribute
+
+1. Fork this repository.
+2. Clone your fork locally.
+3. Create a feature branch.
+
+```bash
+git checkout -b feature/short-description
+```
+
+4. Install dependencies and run the app locally (`npm install`, `npm run dev`).
+5. Make your changes.
+6. Run quality checks before opening a PR:
+
+```bash
+npm run lint
+npm test -- --run
+```
+
+7. Commit and push your branch.
+8. Open a pull request with a clear summary of what changed and why.
+
+## Project Structure
+
+- `src/components/`: UI components and page sections.
+- `src/utils/`: Data helpers and utility functions.
+- `src/components/__tests__/`: Component and utility tests.
+
+## Architecture Decision Records
+
+- `ADR.md`: ADR-001 Frontend Architecture Baseline Review
+- `ADR-002.md`: Structured Content Model and Rendering Strategy
+- `ADR-003.md`: Data Source Abstraction with Optional Firebase Backend
+
+## Notes
+
+- Theme preference is stored in `localStorage`.
+- Content data for videos/blog entries is currently maintained in utility files under `src/utils/`.
