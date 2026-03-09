@@ -937,6 +937,308 @@ const blogList = [
       </p>
     </footer>
   </article>)
+  },
+  {episode: 5,
+    dateCreated: '2026-03-05',
+    title: "How to Give Feedback:",
+    body: ( <article>
+    <header>
+      <h1>That Actually Helps as a Software Engineer</h1>
+      <p>
+        Most engineers do not struggle with noticing problems.
+      </p>
+      <p>
+        We notice unclear design docs. We notice risky shortcuts. We notice when
+        priorities feel confusing or when communication is not landing well.
+      </p>
+      <p>
+        The hard part is not seeing the issue.
+      </p>
+      <p>
+        The hard part is saying something in a way that actually helps.
+      </p>
+      <p>
+        Poorly delivered feedback creates defensiveness. Well-delivered feedback
+        creates improvement.
+      </p>
+      <p>
+        And when the goal is helping someone grow, even critical feedback can be
+        a form of kindness.
+      </p>
+      <p>
+        Avoiding feedback may feel polite in the moment, but it often leaves
+        people stuck. Thoughtful feedback helps people improve.
+      </p>
+      <p>
+        In software engineering, that matters a lot.
+      </p>
+    </header>
+
+    <section>
+      <h2>The Core Pattern</h2>
+      <p>
+        Whether you are giving feedback to a peer, to someone who reports to
+        you, or upward to your manager, the same basic pattern applies.
+      </p>
+      <p>Good feedback is:</p>
+      <ul>
+        <li>Specific</li>
+        <li>Focused on behavior or work</li>
+        <li>Future-oriented</li>
+      </ul>
+      <p>
+        It should help someone understand what happened, why it mattered, and
+        what they can do differently next time.
+      </p>
+    </section>
+
+    <section>
+      <h2>Peer-to-Peer Feedback</h2>
+      <p>
+        Peer feedback is one of the most common forms of feedback engineers give.
+      </p>
+      <p>
+        It might happen in a code review, in a design discussion, or in the way
+        a teammate communicates during a project.
+      </p>
+      <p>
+        The first mindset to bring into peer feedback is this:
+        <strong>assume positive intent.</strong>
+      </p>
+      <p>
+        Most engineers are not being careless on purpose. They may be moving
+        quickly, juggling priorities, or optimizing for something different than
+        you are.
+      </p>
+      <p>
+        Assuming positive intent helps you separate the person from the behavior.
+        That matters.
+      </p>
+      <p>
+        Instead of saying:
+      </p>
+      <blockquote>
+        <p>You always miss edge cases.</p>
+      </blockquote>
+      <p>
+        You might say:
+      </p>
+      <blockquote>
+        <p>
+          In the last two PRs, I noticed a few edge cases were not covered.
+          Would it help to add a quick checklist before merging?
+        </p>
+      </blockquote>
+      <p>
+        That version is more useful because it focuses on observable behavior,
+        references a concrete pattern, and suggests a path forward.
+      </p>
+      <p>
+        A simple structure that works well is:
+      </p>
+      <ul>
+        <li><strong>Observation</strong></li>
+        <li><strong>Impact</strong></li>
+        <li><strong>Suggestion</strong></li>
+      </ul>
+      <p>For example:</p>
+      <blockquote>
+        <p>
+          In yesterday’s design meeting, we moved past tradeoffs pretty quickly.
+          I think that left a few open questions. Maybe next time we could spend
+          a few minutes explicitly listing pros and cons.
+        </p>
+      </blockquote>
+      <p>
+        This is the kind of feedback that improves collaboration instead of
+        creating tension.
+      </p>
+    </section>
+
+    <section>
+      <h2>Manager-to-Report Feedback</h2>
+      <p>
+        Feedback changes when you are giving it as a manager.
+      </p>
+      <p>
+        In this case, power flows downward. Your words carry more weight, which
+        means your feedback can either create clarity or create fear.
+      </p>
+      <p>
+        One of the most important things a manager can do is separate the person
+        from the behavior.
+      </p>
+      <p>
+        Assume positive intent about the individual while being honest about the
+        work.
+      </p>
+      <p>
+        Instead of saying:
+      </p>
+      <blockquote>
+        <p>You need to be more senior.</p>
+      </blockquote>
+      <p>
+        Try something like:
+      </p>
+      <blockquote>
+        <p>
+          In the last two design discussions, the tradeoffs were not clearly
+          articulated. I’d like you to focus on calling those out more
+          explicitly in future discussions.
+        </p>
+      </blockquote>
+      <p>
+        That version is more effective because it is about behavior, not
+        identity.
+      </p>
+      <p>
+        It also makes the path forward visible.
+      </p>
+      <p>
+        Vague feedback like “communicate better” rarely helps someone grow.
+        Specific feedback does.
+      </p>
+      <p>For example:</p>
+      <blockquote>
+        <p>
+          In the last two sprint demos, risks were not mentioned. Going forward,
+          I’d like you to include a short risk summary at the end of each demo.
+        </p>
+      </blockquote>
+      <p>
+        This connects the feedback to observable behavior and gives the other
+        person something clear to practice.
+      </p>
+      <p>
+        For managers, one more principle matters a lot:
+      </p>
+      <p>
+        <strong>Praise publicly. Correct privately.</strong>
+      </p>
+      <p>
+        Psychological safety matters, especially when authority is involved.
+      </p>
+    </section>
+
+    <section>
+      <h2>Managing Up</h2>
+      <p>
+        Upward feedback is often the most uncomfortable kind to give, but it is
+        also one of the most valuable professional skills an engineer can
+        develop.
+      </p>
+      <p>
+        The goal here is not criticism. The goal is alignment.
+      </p>
+      <p>
+        When you give feedback upward, frame it around shared outcomes.
+      </p>
+      <p>
+        Instead of saying:
+      </p>
+      <blockquote>
+        <p>You’re unclear in meetings.</p>
+      </blockquote>
+      <p>
+        You could say:
+      </p>
+      <blockquote>
+        <p>
+          In planning meetings, I sometimes leave unsure about the priority
+          order. Would it help if we summarized the top priorities at the end?
+        </p>
+      </blockquote>
+      <p>
+        This shifts the conversation from blame to improvement.
+      </p>
+      <p>
+        It focuses on impact, suggests a practical adjustment, and keeps the
+        conversation tied to a shared goal.
+      </p>
+      <p>
+        Managing up also requires judgment.
+      </p>
+      <ul>
+        <li>Consider the timing.</li>
+        <li>Consider the relationship.</li>
+        <li>Consider whether your tone is calm and constructive.</li>
+      </ul>
+      <p>
+        Upward feedback delivered emotionally rarely lands well. Upward feedback
+        delivered thoughtfully often builds trust and respect.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why Positive Intent Matters</h2>
+      <p>
+        In every direction of feedback, it helps to assume positive intent.
+      </p>
+      <p>
+        That does not mean ignoring problems. It means resisting the urge to
+        turn a work issue into a character judgment.
+      </p>
+      <p>
+        It is much easier to give helpful feedback when you start from the idea
+        that the other person is trying, but something in their behavior or work
+        is not landing the way they intend.
+      </p>
+      <p>
+        That mindset keeps the conversation human and keeps your feedback more
+        accurate.
+      </p>
+    </section>
+
+    <section>
+      <h2>A Simple Question to Ask Yourself First</h2>
+      <p>
+        Before giving feedback, pause and ask yourself one question:
+      </p>
+      <blockquote>
+        <p>
+          Is my goal to help this person improve, or to relieve my own
+          frustration?
+        </p>
+      </blockquote>
+      <p>
+        That distinction matters.
+      </p>
+      <p>
+        When the goal is improvement, your tone becomes calmer, your language
+        becomes more specific, and your feedback becomes more useful.
+      </p>
+      <p>
+        When the goal is just emotional release, that usually shows too.
+      </p>
+    </section>
+
+    <section>
+      <h2>Closing Thought</h2>
+      <p>
+        Giving feedback well is a multiplier.
+      </p>
+      <p>
+        It improves code quality, team clarity, trust, and growth.
+      </p>
+      <p>
+        Peer feedback builds collaboration. Manager feedback builds development.
+        Upward feedback builds alignment.
+      </p>
+      <p>
+        Across all three, the pattern stays the same:
+      </p>
+      <ul>
+        <li>Be specific</li>
+        <li>Focus on behavior or work</li>
+        <li>Keep the conversation aimed at the future</li>
+      </ul>
+      <p>
+        Feedback does not have to be harsh to be honest. And when the aim is
+        growth, even critical feedback can be an act of kindness.
+      </p>
+    </section>
+  </article>)
   }
 ];
 
