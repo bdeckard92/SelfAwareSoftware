@@ -18,6 +18,9 @@ const NavBar = ({ theme = 'light', onToggleTheme = () => {} }) => {
                   <Link to="/blog">Blog Posts</Link>
                 </li>
                 <li>
+                  <Link to="/assessment">Level Assessment</Link>
+                </li>
+                <li>
                   <button
                     className="theme-toggle"
                     type="button"

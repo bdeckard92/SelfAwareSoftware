@@ -8,6 +8,7 @@ import Home from "./components/home/Home";
 import VideoList from "./components/videoList/VideoList";
 import About from "./components/about/About";
 import Blog from "./components/blog/Blog";
+import Assessment from "./components/assessment/Assessment";
 
 function App() {
   const getInitialTheme = () => {
@@ -45,6 +46,7 @@ function App() {
         <Route path="/videos" element={<VideoList />} />
         <Route path="/about" element={<About/>}/>
         <Route path="/blog" element={<Blog/>}/>
+        <Route path="/assessment" element={<Assessment />} />
       </Routes>
     </>
   );
