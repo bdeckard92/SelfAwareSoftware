@@ -1239,7 +1239,286 @@ const blogList = [
       </p>
     </section>
   </article>)
+  },
+  { episode: 6,
+  dateCreated: "2026-03-17",
+  title: "Why You're Not Getting Better Feedback as a Software Engineer",
+body: (
+    <article>
+    <header>
+      <h1>Focus on Professional Basics to Ensure Better Feedback</h1>
+      <p>
+        A lot of engineers want feedback that helps them grow.
+      </p>
+      <p>
+        They want advice about system design. Architecture decisions. Technical leadership.
+      </p>
+      <p>
+        But sometimes the feedback they get sounds like this:
+      </p>
+      <blockquote>
+        <p>“Please communicate earlier.”<br/>
+        “Please follow through.”<br/>
+        “Please show up on time.”</p>
+      </blockquote>
+      <p>
+        And that can feel frustrating.
+      </p>
+      <p>
+        But here’s the reality:
+      </p>
+      <p>
+        <strong>If the professional basics aren’t solid, that’s where the feedback will stay.</strong>
+      </p>
+      <p>
+        Not because managers want to nitpick — but because reliability comes first.
+      </p>
+    </header>
+
+    <section>
+      <h2>The Hidden Filter for Growth Feedback</h2>
+      <p>
+        Every manager is making a quiet assessment.
+      </p>
+      <p>
+        Not just about your technical ability — but about your professional reliability.
+      </p>
+      <p>
+        They’re asking questions like:
+      </p>
+      <ul>
+        <li>Can I trust this person to follow through?</li>
+        <li>Will they communicate when something goes wrong?</li>
+        <li>Will they show up prepared?</li>
+      </ul>
+      <p>
+        Because before someone can grow into larger responsibilities, they have to demonstrate consistency.
+      </p>
+      <p>
+        You don’t build advanced engineering skills on top of an unreliable foundation.
+      </p>
+    </section>
+
+    <section>
+      <h2>Professional Basics Engineers Should Lock Down</h2>
+      <p>
+        There are a handful of fundamentals that remove friction from your work.
+      </p>
+      <p>
+        They’re not glamorous — but they make a huge difference.
+      </p>
+
+      <h3>Reliability</h3>
+      <p>
+        Reliability is about doing what you say you’ll do.
+      </p>
+      <ul>
+        <li>Show up on time to meetings</li>
+        <li>Meet commitments when you can</li>
+        <li>Communicate early if something slips</li>
+      </ul>
+      <p>
+        Things will go wrong. That’s normal.
+      </p>
+      <p>
+        What matters is whether people find out early — or after the damage is already done.
+      </p>
+      <p>
+        Reliable engineers make other people’s work easier.
+      </p>
+
+      <h3>Communication</h3>
+      <p>
+        Good engineers communicate. Great engineers communicate before they’re asked.
+      </p>
+      <ul>
+        <li>Provide updates on work</li>
+        <li>Call out blockers early</li>
+        <li>Follow up when something needs attention</li>
+      </ul>
+      <p>
+        Silence creates uncertainty.
+      </p>
+      <p>
+        And uncertainty forces your manager to spend time tracking you down instead of helping you grow.
+      </p>
+
+      <h3>Ownership</h3>
+      <p>
+        Ownership is about closing loops.
+      </p>
+      <p>
+        If you take something on, people should feel confident it will get done.
+      </p>
+      <ul>
+        <li>Don’t disappear when things get complicated</li>
+        <li>Ask questions early</li>
+        <li>Stay engaged until the work is complete</li>
+      </ul>
+      <p>
+        Ownership builds trust faster than almost anything else.
+      </p>
+
+      <h3>Self-Awareness</h3>
+      <p>
+        Self-awareness shows up in small ways.
+      </p>
+      <ul>
+        <li>How you respond to feedback</li>
+        <li>How you participate in meetings</li>
+        <li>How you collaborate with teammates</li>
+      </ul>
+      <p>
+        A useful question to ask yourself:
+      </p>
+      <blockquote>
+        <p>“How am I showing up right now?”</p>
+      </blockquote>
+      <p>
+        Professionalism is often about awareness, not just effort.
+      </p>
+
+      <h3>Presence</h3>
+      <p>
+        Presence doesn’t mean talking the most.
+      </p>
+      <p>
+        It means participating constructively.
+      </p>
+      <ul>
+        <li>Being engaged</li>
+        <li>Contributing when it matters</li>
+        <li>Managing visible frustration in discussions</li>
+      </ul>
+      <p>
+        Engineers care deeply about their work — that’s a strength.
+      </p>
+      <p>
+        Professionalism means channeling that energy productively.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why These Basics Matter</h2>
+      <p>
+        Managers tend to place engineers into one of two mental categories.
+      </p>
+
+      <h3>Reliable Professionals</h3>
+      <ul>
+        <li>Follow through</li>
+        <li>Communicate clearly</li>
+        <li>Handle the basics well</li>
+      </ul>
+      <p>
+        Managers think:
+      </p>
+      <blockquote>
+        <p>“This is someone I can invest in.”<br/>
+        “This person is ready for more responsibility.”</p>
+      </blockquote>
+
+      <h3>High Maintenance</h3>
+      <p>
+        These engineers may be technically capable — but require constant reminders about basics.
+      </p>
+      <p>
+        That consumes attention.
+      </p>
+      <p>
+        And attention is limited.
+      </p>
+      <p>
+        If your manager is spending time reminding you about fundamentals, they can’t spend that same time helping you grow.
+      </p>
+    </section>
+
+    <section>
+      <h2>The Payoff</h2>
+      <p>
+        When the professional basics are solid, something important happens.
+      </p>
+      <p>
+        The feedback shifts.
+      </p>
+      <p>
+        Instead of hearing:
+      </p>
+      <blockquote>
+        <p>“Please communicate earlier.”<br/>
+        “Please follow through.”</p>
+      </blockquote>
+      <p>
+        You start hearing:
+      </p>
+      <blockquote>
+        <p>“Let’s talk about your system design.”<br/>
+        “Let’s talk about influence.”<br/>
+        “Let’s talk about leadership.”</p>
+      </blockquote>
+      <p>
+        That’s the kind of feedback that actually moves your career forward.
+      </p>
+      <p>
+        Professional discipline creates the space for real growth.
+      </p>
+    </section>
+
+    <section>
+      <h2>Closing Thought</h2>
+      <p>
+        Professional basics aren’t glamorous.
+      </p>
+      <p>
+        But they’re powerful.
+      </p>
+      <p>
+        Reliability. Communication. Ownership. Self-awareness.
+      </p>
+      <p>
+        When those are handled well, people trust you with bigger challenges.
+      </p>
+      <p>
+        And that’s where real career growth begins.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        If you found this helpful, consider subscribing for more practical insights on career growth in software engineering.
+      </p>
+    </footer>
+  </article>)
   }
 ];
 
 export default blogList;
+
+// make a template for blog entries objects:
+/*
+// Blog Entry Template
+{
+  episode: number,
+  dateCreated: "YYYY-MM-DD",
+  title: "Blog Title",
+  body: (
+    <article>
+      <header>
+        <h1>Title</h1>
+      </header>
+
+      <section>
+        <h2>Section Heading</h2>
+        <p>Paragraph content</p>
+        <ul>
+          <li>Bullet point</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>Closing remarks</p>
+      </footer>
+    </article>
+  ),
+}
+*/
