@@ -26,7 +26,14 @@ const videos = [
     id: 5,
     title: "How to Give Feedback That Actually Helps as a Software Engineer.",
     datePublished: "2026-03-05"
-   }
+   },
+   {
+    vUrl: "https://www.youtube.com/embed/5W5sKq-BshQ?si=MTARpRIfWQJnKOy2",
+    id: 6,
+    title: "Why You’re Not Getting Better Feedback as a Software Engineer",
+    datePublished: "2026-03-17"
+   },
+  
 ];
 
 export default videos;
