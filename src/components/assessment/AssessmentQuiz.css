@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* ─── Layout ──────────────────────────────────────────────────────────────── */
+
+.assessment-quiz {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1.25rem 1rem;
+  box-sizing: border-box;
+  gap: 2rem;
+}
+
+/* ─── Font helpers ────────────────────────────────────────────────────────── */
+
+.pixel-heading {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.pixel-text {
+  font-family: 'Press Start 2P', monospace;
+}
+
+/* ─── Intro ───────────────────────────────────────────────────────────────── */
+
+.quiz-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 580px;
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+.quiz-badge {
+  font-size: 0.5rem;
+  background: #2196F3;
+  color: #fff;
+  padding: 5px 14px;
+  letter-spacing: 3px;
+}
+
+.quiz-title {
+  font-size: clamp(0.7rem, 2.2vw, 1rem);
+  line-height: 1.8;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.quiz-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  opacity: 0.7;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.quiz-dimensions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.dimension-chip {
+  font-size: 0.72rem;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  padding: 4px 10px;
+  letter-spacing: 0.04em;
+}
+
+/* ─── Pixel button ────────────────────────────────────────────────────────── */
+
+.pixel-btn {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  padding: 14px 32px;
+  background: #2196F3;
+  color: #fff;
+  border: none;
+  border-bottom: 4px solid #1565C0;
+  border-right: 4px solid #1565C0;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: transform 0.05s, border-width 0.05s;
+}
+
+.pixel-btn:hover {
+  background: #1976D2;
+  transform: translate(2px, 2px);
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+}
+
+.pixel-btn:active {
+  transform: translate(4px, 4px);
+  border-bottom-width: 0;
+  border-right-width: 0;
+}
+
+/* ─── Quiz screen ─────────────────────────────────────────────────────────── */
+
+.quiz-main {
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.quiz-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quiz-progress {
+  font-size: 0.5rem;
+  color: var(--text-color);
+  opacity: 0.6;
+  letter-spacing: 0.1em;
+}
+
+.quiz-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background: #2196F3;
+  transition: width 0.4s ease;
+}
+
+/* ─── Question card ───────────────────────────────────────────────────────── */
+
+@keyframes slideUp {
+  from { transform: translateY(14px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.question-card {
+  background: var(--surface-color);
+  border: 2px solid var(--border-color);
+  border-bottom: 4px solid var(--border-color);
+  padding: 1.75rem;
+  animation: slideUp 0.25s steps(5) both;
+}
+
+.dimension-label {
+  font-size: 0.45rem;
+  color: #2196F3;
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.question-text {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-color);
+  margin: 0 0 1.5rem;
+  font-weight: 500;
+}
+
+.answers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 520px) {
+  .answers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Answer buttons ──────────────────────────────────────────────────────── */
+
+.answer-btn {
+  text-align: left;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  padding: 0.9rem 1rem;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: 2px solid var(--border-color);
+  border-bottom: 4px solid var(--border-color);
+  border-right: 3px solid var(--border-color);
+  cursor: pointer;
+  border-radius: 0;
+  transition: background 0.1s, transform 0.05s, border-width 0.05s;
+}
+
+.answer-btn:hover:not(:disabled) {
+  background: #2196F3;
+  color: #fff;
+  border-color: #1565C0;
+  transform: translate(1px, 1px);
+  border-bottom-width: 3px;
+  border-right-width: 2px;
+}
+
+.answer-btn--selected {
+  background: #4CAF50 !important;
+  color: #fff !important;
+  border-color: #2e7d32 !important;
+  transform: translate(2px, 2px) !important;
+  border-bottom-width: 2px !important;
+  border-right-width: 1px !important;
+}
+
+.answer-btn:disabled {
+  cursor: default;
+}
+
+/* ─── Result screen ───────────────────────────────────────────────────────── */
+
+.quiz-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 640px;
+  width: 100%;
+  text-align: center;
+  flex: 1;
+}
+
+@keyframes resultPop {
+  0%   { transform: scale(0.7); opacity: 0; }
+  70%  { transform: scale(1.06); }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+.result-badge {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(0.65rem, 2.2vw, 0.95rem);
+  padding: 16px 28px;
+  border: 3px solid;
+  border-bottom: 6px solid;
+  line-height: 1.6;
+  animation: resultPop 0.5s steps(6) both;
+}
+
+.result-description {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--text-color);
+  opacity: 0.85;
+  max-width: 480px;
+  margin: 0;
+}
+
+.result-breakdown {
+  width: 100%;
+  max-width: 520px;
+  background: var(--surface-color);
+  border: 2px solid var(--border-color);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  text-align: left;
+}
+
+.breakdown-heading {
+  font-size: 0.42rem;
+  letter-spacing: 0.2em;
+  color: var(--text-color);
+  opacity: 0.45;
+  margin-bottom: 0.15rem;
+}
+
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 1rem;
+}
+
+.breakdown-dim {
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.breakdown-level {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.42rem;
+  white-space: nowrap;
+}
+
+/* ─── Character track ─────────────────────────────────────────────────────── */
+
+.quiz-track-area {
+  width: 100%;
+  max-width: 680px;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.track-road {
+  position: relative;
+  height: 120px;
+  background: var(--surface-color);
+  border: 2px solid var(--border-color);
+  border-top: 4px solid var(--border-color);
+  overflow: visible;
+}
+
+/* Ground line */
+.track-road::after {
+  content: '';
+  position: absolute;
+  bottom: 26px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--border-color);
+}
+
+/* ─── Milestones ──────────────────────────────────────────────────────────── */
+
+.track-milestone {
+  position: absolute;
+  bottom: 28px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0;
+  pointer-events: none;
+}
+
+.milestone-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--border-color);
+  border: 2px solid var(--border-color);
+  transition: background 0.3s;
+}
+
+.track-milestone--active .milestone-dot {
+  background: #2196F3;
+  border-color: #1565C0;
+}
+
+.milestone-pole {
+  width: 2px;
+  height: 50px;
+  background: var(--border-color);
+  transition: background 0.3s;
+}
+
+.track-milestone--active .milestone-pole {
+  background: #2196F3;
+}
+
+.milestone-label {
+  font-size: 0.38rem;
+  color: var(--text-color);
+  opacity: 0.5;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+  transition: opacity 0.3s, color 0.3s;
+}
+
+.track-milestone--active .milestone-label {
+  opacity: 1;
+  color: #2196F3;
+}
+
+/* ─── 8-bit character ─────────────────────────────────────────────────────── */
+
+.character-wrapper {
+  position: absolute;
+  bottom: 29px; /* sit on the ground line */
+  transform: translateX(-50%);
+  transition: left 0.55s steps(11);
+  width: 40px;
+  height: 75px;
+}
+
+/* Inner div isolates vertical animation from the left transition */
+.character-bob {
+  width: 40px;
+  height: 75px;
+}
+
+@keyframes characterBob {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+}
+
+.character--walking .character-bob {
+  animation: characterBob 0.4s steps(2) infinite;
+}
+
+@keyframes characterCelebrate {
+  0%   { transform: translateY(0); }
+  15%  { transform: translateY(-22px); }
+  30%  { transform: translateY(0); }
+  45%  { transform: translateY(-14px); }
+  60%  { transform: translateY(0); }
+  75%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.character--celebrating .character-bob {
+  animation: characterCelebrate 1s steps(10) 2;
+}
+
+/* The pixel-art sprite div — box-shadow set inline via React */
+.character-sprite {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  overflow: visible;
+}
