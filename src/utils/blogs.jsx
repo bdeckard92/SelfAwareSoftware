@@ -223,9 +223,9 @@ const blogList = [
     body: (
       <article>
         <header>
-           <h1>Know what's expected at each level</h1>
+          <h1>Know what's expected at each level</h1>
         </header>
-       
+
         <p>
           One of the most common sources of frustration in a software
           engineering career isn’t lack of skill.
@@ -538,958 +538,1038 @@ const blogList = [
     dateCreated: "2026-02-17",
     title: "How to Recieve Improvement Feedback as a Software Engineer",
     body: (
-     
-  
-     
-          <article>
-            <header>
-              <h1>
-               
-                (Without Getting Defensive)
-              </h1>
-              <p>Most software engineers say they want feedback.</p>
-              <p>Until they actually get it.</p>
-              <p>
-                Improvement feedback can feel personal — especially in technical
-                roles where we take pride in our work. Even when the intent is
-                growth, the initial reaction is often defensive. Your heart rate
-                rises. You begin mentally replaying events. You start building a
-                counterargument before the other person finishes speaking.
-              </p>
-              <p>That reaction is normal.</p>
-              <p>
-                But how you handle the next few minutes can have an outsized
-                impact on your career.
-              </p>
-              <p>
-                Over time, I’ve simplified how I try to receive improvement
-                feedback into three steps:
-              </p>
-              <p>
-                <strong>Be Thankful. Be Thoughtful. Be Purposeful.</strong>
-              </p>
-              <p>Simple. Not always easy. But simple.</p>
-            </header>
+      <article>
+        <header>
+          <h1>(Without Getting Defensive)</h1>
+          <p>Most software engineers say they want feedback.</p>
+          <p>Until they actually get it.</p>
+          <p>
+            Improvement feedback can feel personal — especially in technical
+            roles where we take pride in our work. Even when the intent is
+            growth, the initial reaction is often defensive. Your heart rate
+            rises. You begin mentally replaying events. You start building a
+            counterargument before the other person finishes speaking.
+          </p>
+          <p>That reaction is normal.</p>
+          <p>
+            But how you handle the next few minutes can have an outsized impact
+            on your career.
+          </p>
+          <p>
+            Over time, I’ve simplified how I try to receive improvement feedback
+            into three steps:
+          </p>
+          <p>
+            <strong>Be Thankful. Be Thoughtful. Be Purposeful.</strong>
+          </p>
+          <p>Simple. Not always easy. But simple.</p>
+        </header>
 
-            <section>
-              <h2>Be Thankful</h2>
-              <p>
-                When someone gives you improvement feedback, they are taking a
-                risk.
-              </p>
-              <ul>
-                <li>They may worry about conflict.</li>
-                <li>They may worry about damaging the relationship.</li>
-                <li>They may worry about how you’ll react.</li>
-              </ul>
-              <p>
-                The first step is to say: <em>“Thank you.”</em>
-              </p>
-              <p>
-                Not because you agree. Not because it feels good. But because
-                gratitude keeps the feedback loop open.
-              </p>
-              <p>
-                You can appreciate the input without agreeing with the
-                conclusion.
-              </p>
-              <p>
-                If people feel punished for giving you feedback, they will stop
-                giving it. And silent teammates are far more dangerous than
-                uncomfortable conversations.
-              </p>
-              <p>Gratitude isn’t submission. It’s signal preservation.</p>
-            </section>
+        <section>
+          <h2>Be Thankful</h2>
+          <p>
+            When someone gives you improvement feedback, they are taking a risk.
+          </p>
+          <ul>
+            <li>They may worry about conflict.</li>
+            <li>They may worry about damaging the relationship.</li>
+            <li>They may worry about how you’ll react.</li>
+          </ul>
+          <p>
+            The first step is to say: <em>“Thank you.”</em>
+          </p>
+          <p>
+            Not because you agree. Not because it feels good. But because
+            gratitude keeps the feedback loop open.
+          </p>
+          <p>
+            You can appreciate the input without agreeing with the conclusion.
+          </p>
+          <p>
+            If people feel punished for giving you feedback, they will stop
+            giving it. And silent teammates are far more dangerous than
+            uncomfortable conversations.
+          </p>
+          <p>Gratitude isn’t submission. It’s signal preservation.</p>
+        </section>
 
-            <section>
-              <h2>Be Thoughtful</h2>
-              <p>
-                This is where the real work happens — and it starts internally.
-              </p>
-              <p>Before responding outwardly, pause.</p>
-              <p>
-                Notice your reaction. Are you defensive? Are you hurt? Are you
-                mentally preparing a rebuttal?
-              </p>
-              <p>Defensiveness is automatic. Curiosity is intentional.</p>
-              <p>
-                Instead of immediately asking for proof or examples, start with
-                an internal question:
-              </p>
-              <blockquote>
-                <p>
-                  <em>
-                    What have I done that could reasonably lead someone to this
-                    conclusion?
-                  </em>
-                </p>
-              </blockquote>
-              <p>That word “reasonably” matters.</p>
-              <p>
-                You’re not assuming the feedback is fully correct. You’re
-                assuming there may be data you haven’t fully seen.
-              </p>
-              <p>Ask yourself:</p>
-              <ul>
-                <li>Can I think of even one example?</li>
-                <li>Have I heard something adjacent before?</li>
-                <li>Is there a pattern here?</li>
-              </ul>
-              <p>
-                Sometimes feedback is poorly phrased. Sometimes it’s incomplete.
-                Sometimes it’s only partially accurate.
-              </p>
-              <p>But even partial truth is useful.</p>
-              <p>
-                Your job isn’t to defend your intent. Your job is to examine
-                your impact.
-              </p>
-              <p>
-                Even if the feedback is 20% accurate, that 20% might be the most
-                valuable part.
-              </p>
-              <p>Extract signal before responding.</p>
-            </section>
+        <section>
+          <h2>Be Thoughtful</h2>
+          <p>This is where the real work happens — and it starts internally.</p>
+          <p>Before responding outwardly, pause.</p>
+          <p>
+            Notice your reaction. Are you defensive? Are you hurt? Are you
+            mentally preparing a rebuttal?
+          </p>
+          <p>Defensiveness is automatic. Curiosity is intentional.</p>
+          <p>
+            Instead of immediately asking for proof or examples, start with an
+            internal question:
+          </p>
+          <blockquote>
+            <p>
+              <em>
+                What have I done that could reasonably lead someone to this
+                conclusion?
+              </em>
+            </p>
+          </blockquote>
+          <p>That word “reasonably” matters.</p>
+          <p>
+            You’re not assuming the feedback is fully correct. You’re assuming
+            there may be data you haven’t fully seen.
+          </p>
+          <p>Ask yourself:</p>
+          <ul>
+            <li>Can I think of even one example?</li>
+            <li>Have I heard something adjacent before?</li>
+            <li>Is there a pattern here?</li>
+          </ul>
+          <p>
+            Sometimes feedback is poorly phrased. Sometimes it’s incomplete.
+            Sometimes it’s only partially accurate.
+          </p>
+          <p>But even partial truth is useful.</p>
+          <p>
+            Your job isn’t to defend your intent. Your job is to examine your
+            impact.
+          </p>
+          <p>
+            Even if the feedback is 20% accurate, that 20% might be the most
+            valuable part.
+          </p>
+          <p>Extract signal before responding.</p>
+        </section>
 
-            <section>
-              <h2>Be Purposeful</h2>
-              <p>Once you’ve paused and reflected, now you respond.</p>
-              <p>And here’s the key question:</p>
-              <blockquote>
-                <p>
-                  <em>
-                    What is my purpose right now — to understand, or to defend?
-                  </em>
-                </p>
-              </blockquote>
-              <p>Those are very different conversations.</p>
-              <p>
-                If your purpose is to understand, your tone shifts. Instead of
-                pushing back immediately, you might say:
-              </p>
-              <blockquote>
-                <p>
-                  “I’d like to understand that better. Can you walk me through
-                  what you observed?”
-                </p>
-              </blockquote>
-              <p>That’s not agreement. It’s clarity.</p>
-              <p>Being purposeful means:</p>
-              <ul>
-                <li>You’re not reacting emotionally.</li>
-                <li>You’re not trying to win.</li>
-                <li>You’re trying to learn.</li>
-              </ul>
-              <p>
-                You can still disagree. You can still add context. But you do it
-                from a position of calm reflection rather than reflex.
-              </p>
-              <p>
-                Purpose shapes tone. Tone shapes trust. Trust determines whether
-                people continue investing in your growth.
-              </p>
-            </section>
+        <section>
+          <h2>Be Purposeful</h2>
+          <p>Once you’ve paused and reflected, now you respond.</p>
+          <p>And here’s the key question:</p>
+          <blockquote>
+            <p>
+              <em>
+                What is my purpose right now — to understand, or to defend?
+              </em>
+            </p>
+          </blockquote>
+          <p>Those are very different conversations.</p>
+          <p>
+            If your purpose is to understand, your tone shifts. Instead of
+            pushing back immediately, you might say:
+          </p>
+          <blockquote>
+            <p>
+              “I’d like to understand that better. Can you walk me through what
+              you observed?”
+            </p>
+          </blockquote>
+          <p>That’s not agreement. It’s clarity.</p>
+          <p>Being purposeful means:</p>
+          <ul>
+            <li>You’re not reacting emotionally.</li>
+            <li>You’re not trying to win.</li>
+            <li>You’re trying to learn.</li>
+          </ul>
+          <p>
+            You can still disagree. You can still add context. But you do it
+            from a position of calm reflection rather than reflex.
+          </p>
+          <p>
+            Purpose shapes tone. Tone shapes trust. Trust determines whether
+            people continue investing in your growth.
+          </p>
+        </section>
 
-            <section>
-              <h2>Why This Matters for Software Engineers</h2>
-              <p>Technical skill alone doesn’t determine career progression.</p>
-              <p>
-                Engineers who grow fastest aren’t the ones who never receive
-                critical feedback. They’re the ones who know how to process it
-                well.
-              </p>
-              <p>
-                Improvement feedback is not a verdict on your competence. It’s
-                data about your impact.
-              </p>
-              <p>If you can:</p>
-              <ul>
-                <li>Protect the feedback loop</li>
-                <li>Extract signal from imperfect delivery</li>
-                <li>Respond with intention rather than instinct</li>
-              </ul>
-              <p>You gain an advantage that compounds over time.</p>
-            </section>
+        <section>
+          <h2>Why This Matters for Software Engineers</h2>
+          <p>Technical skill alone doesn’t determine career progression.</p>
+          <p>
+            Engineers who grow fastest aren’t the ones who never receive
+            critical feedback. They’re the ones who know how to process it well.
+          </p>
+          <p>
+            Improvement feedback is not a verdict on your competence. It’s data
+            about your impact.
+          </p>
+          <p>If you can:</p>
+          <ul>
+            <li>Protect the feedback loop</li>
+            <li>Extract signal from imperfect delivery</li>
+            <li>Respond with intention rather than instinct</li>
+          </ul>
+          <p>You gain an advantage that compounds over time.</p>
+        </section>
 
-            <section>
-              <h2>A Simple Practice</h2>
-              <p>The next time you receive improvement feedback, try this:</p>
-              <ol>
-                <li>Say thank you.</li>
-                <li>Write the feedback down.</li>
-                <li>Wait 24 hours.</li>
-                <li>
-                  Revisit it and ask yourself:
-                  <em>What part of this is useful for me to work on?</em>
-                </li>
-              </ol>
-              <p>
-                Growth often lives in the pause between reaction and response.
-              </p>
-            </section>
+        <section>
+          <h2>A Simple Practice</h2>
+          <p>The next time you receive improvement feedback, try this:</p>
+          <ol>
+            <li>Say thank you.</li>
+            <li>Write the feedback down.</li>
+            <li>Wait 24 hours.</li>
+            <li>
+              Revisit it and ask yourself:
+              <em>What part of this is useful for me to work on?</em>
+            </li>
+          </ol>
+          <p>Growth often lives in the pause between reaction and response.</p>
+        </section>
 
-            <footer>
-              <p>
-                If you found this helpful, consider subscribing to the YouTube
-                channel for more practical guidance on career growth in software
-                engineering.
-              </p>
-            </footer>
-          </article>
-     
-    
+        <footer>
+          <p>
+            If you found this helpful, consider subscribing to the YouTube
+            channel for more practical guidance on career growth in software
+            engineering.
+          </p>
+        </footer>
+      </article>
     ),
   },
-  {episode: 4,
+  {
+    episode: 4,
     dateCreated: "2026-02-24",
     title: "From Feedback to Action:",
-    body: (<article>
-    <header>
-      <h1>Setting SMART Goals as a Software Engineer</h1>
-      <p>
-        Most software engineers say they want to grow.
-      </p>
-      <p>
-        They want to improve their system design skills.
-        They want to communicate better.
-        They want to operate at a senior level.
-        They want to get promoted.
-      </p>
-      <p>
-        But vague goals produce vague progress.
-      </p>
-      <p>
-        If you’ve ever received meaningful feedback and then struggled to translate it into action, you’re not alone.
-        Feedback gives you direction. What most engineers lack is a clear way to turn that direction into measurable growth.
-      </p>
-      <p>
-        That’s where SMART goals can help — if they’re applied correctly.
-      </p>
-    </header>
+    body: (
+      <article>
+        <header>
+          <h1>Setting SMART Goals as a Software Engineer</h1>
+          <p>Most software engineers say they want to grow.</p>
+          <p>
+            They want to improve their system design skills. They want to
+            communicate better. They want to operate at a senior level. They
+            want to get promoted.
+          </p>
+          <p>But vague goals produce vague progress.</p>
+          <p>
+            If you’ve ever received meaningful feedback and then struggled to
+            translate it into action, you’re not alone. Feedback gives you
+            direction. What most engineers lack is a clear way to turn that
+            direction into measurable growth.
+          </p>
+          <p>
+            That’s where SMART goals can help — if they’re applied correctly.
+          </p>
+        </header>
 
-    <section>
-      <h2>SMART Is a Structure — Not the Goal Itself</h2>
-      <p>
-        SMART stands for:
-      </p>
-      <ul>
-        <li><strong>Specific</strong></li>
-        <li><strong>Measurable</strong></li>
-        <li><strong>Achievable</strong></li>
-        <li><strong>Relevant</strong></li>
-        <li><strong>Time-bound</strong></li>
-      </ul>
-      <p>
-        Most people have heard this before. The problem isn’t knowing the acronym.
-        The problem is applying it to behaviors that actually drive career growth.
-      </p>
-      <p>
-        Just because a goal checks the SMART boxes doesn’t mean it’s a good goal.
-      </p>
-      <p>
-        For example:
-      </p>
-      <blockquote>
-        <p>
-          “Over the next four weeks, I will close 15 Jira tickets per sprint to increase productivity.”
-        </p>
-      </blockquote>
-      <p>
-        This is technically SMART. It’s specific. It’s measurable. It’s time-bound.
-        But it may not align with the level you’re trying to grow into.
-      </p>
-      <p>
-        More output doesn’t automatically mean more impact.
-      </p>
-      <p>
-        If you’re trying to operate at a senior level, optimizing for ticket velocity may reinforce junior-level behavior.
-      </p>
-      <p>
-        SMART is a framework. Alignment determines quality.
-      </p>
-    </section>
+        <section>
+          <h2>SMART Is a Structure — Not the Goal Itself</h2>
+          <p>SMART stands for:</p>
+          <ul>
+            <li>
+              <strong>Specific</strong>
+            </li>
+            <li>
+              <strong>Measurable</strong>
+            </li>
+            <li>
+              <strong>Achievable</strong>
+            </li>
+            <li>
+              <strong>Relevant</strong>
+            </li>
+            <li>
+              <strong>Time-bound</strong>
+            </li>
+          </ul>
+          <p>
+            Most people have heard this before. The problem isn’t knowing the
+            acronym. The problem is applying it to behaviors that actually drive
+            career growth.
+          </p>
+          <p>
+            Just because a goal checks the SMART boxes doesn’t mean it’s a good
+            goal.
+          </p>
+          <p>For example:</p>
+          <blockquote>
+            <p>
+              “Over the next four weeks, I will close 15 Jira tickets per sprint
+              to increase productivity.”
+            </p>
+          </blockquote>
+          <p>
+            This is technically SMART. It’s specific. It’s measurable. It’s
+            time-bound. But it may not align with the level you’re trying to
+            grow into.
+          </p>
+          <p>More output doesn’t automatically mean more impact.</p>
+          <p>
+            If you’re trying to operate at a senior level, optimizing for ticket
+            velocity may reinforce junior-level behavior.
+          </p>
+          <p>SMART is a framework. Alignment determines quality.</p>
+        </section>
 
-    <section>
-      <h2>Turning Feedback Into Action</h2>
-      <p>
-        The key is to connect your SMART goal directly to the feedback you’ve received and the expectations of the level you’re growing toward.
-      </p>
-      <p>
-        Let’s look at three examples.
-      </p>
-    </section>
+        <section>
+          <h2>Turning Feedback Into Action</h2>
+          <p>
+            The key is to connect your SMART goal directly to the feedback
+            you’ve received and the expectations of the level you’re growing
+            toward.
+          </p>
+          <p>Let’s look at three examples.</p>
+        </section>
 
-    <section>
-      <h2>Example 1: Improving Communication</h2>
-      <p><strong>Feedback:</strong> “You need to communicate more clearly in meetings.”</p>
-      <p><strong>Vague goal:</strong> “I want to improve my communication.”</p>
-      <p><strong>Stronger SMART goal:</strong></p>
-      <blockquote>
-        <p>
-          “Over the next six weeks, in every sprint demo I lead, I will summarize tradeoffs and risks at the end of my presentation,
-          and I will ask my manager for feedback on clarity after at least two of those demos.”
-        </p>
-      </blockquote>
-      <p>
-        Now we have a clear behavior, a measurable feedback loop, a defined timeframe, and alignment with senior-level expectations.
-        That’s not just activity. That’s deliberate practice.
-      </p>
-    </section>
+        <section>
+          <h2>Example 1: Improving Communication</h2>
+          <p>
+            <strong>Feedback:</strong> “You need to communicate more clearly in
+            meetings.”
+          </p>
+          <p>
+            <strong>Vague goal:</strong> “I want to improve my communication.”
+          </p>
+          <p>
+            <strong>Stronger SMART goal:</strong>
+          </p>
+          <blockquote>
+            <p>
+              “Over the next six weeks, in every sprint demo I lead, I will
+              summarize tradeoffs and risks at the end of my presentation, and I
+              will ask my manager for feedback on clarity after at least two of
+              those demos.”
+            </p>
+          </blockquote>
+          <p>
+            Now we have a clear behavior, a measurable feedback loop, a defined
+            timeframe, and alignment with senior-level expectations. That’s not
+            just activity. That’s deliberate practice.
+          </p>
+        </section>
 
-    <section>
-      <h2>Example 2: Growing in System Design</h2>
-      <p><strong>Feedback:</strong> “You need to strengthen your system design skills.”</p>
-      <p><strong>Vague goal:</strong> “Get better at system design.”</p>
-      <p><strong>Stronger SMART goal:</strong></p>
-      <blockquote>
-        <p>
-          “Over the next quarter, I will proactively draft one design proposal for an upcoming feature,
-          request written feedback from at least one senior or staff engineer, and document the tradeoffs I considered.”
-        </p>
-      </blockquote>
-      <p>
-        This goal builds design clarity, exposure to senior-level thinking, explicit feedback, and documented reasoning.
-        You’re practicing the behavior of senior engineers — not waiting for the title.
-      </p>
-    </section>
+        <section>
+          <h2>Example 2: Growing in System Design</h2>
+          <p>
+            <strong>Feedback:</strong> “You need to strengthen your system
+            design skills.”
+          </p>
+          <p>
+            <strong>Vague goal:</strong> “Get better at system design.”
+          </p>
+          <p>
+            <strong>Stronger SMART goal:</strong>
+          </p>
+          <blockquote>
+            <p>
+              “Over the next quarter, I will proactively draft one design
+              proposal for an upcoming feature, request written feedback from at
+              least one senior or staff engineer, and document the tradeoffs I
+              considered.”
+            </p>
+          </blockquote>
+          <p>
+            This goal builds design clarity, exposure to senior-level thinking,
+            explicit feedback, and documented reasoning. You’re practicing the
+            behavior of senior engineers — not waiting for the title.
+          </p>
+        </section>
 
-    <section>
-      <h2>Example 3: Increasing Team Leverage</h2>
-      <p><strong>Feedback:</strong> “You need to have more impact beyond your own work.”</p>
-      <p><strong>Vague goal:</strong> “Be more impactful.”</p>
-      <p><strong>Stronger SMART goal:</strong></p>
-      <blockquote>
-        <p>
-          “For the next eight weeks, I will mentor one junior engineer during code reviews by leaving at least two explanatory comments per review,
-          and I will ask them whether the feedback was clear and helpful.”
-        </p>
-      </blockquote>
-      <p>
-        This creates measurable leverage — not busyness, not volume. Leverage.
-      </p>
-    </section>
+        <section>
+          <h2>Example 3: Increasing Team Leverage</h2>
+          <p>
+            <strong>Feedback:</strong> “You need to have more impact beyond your
+            own work.”
+          </p>
+          <p>
+            <strong>Vague goal:</strong> “Be more impactful.”
+          </p>
+          <p>
+            <strong>Stronger SMART goal:</strong>
+          </p>
+          <blockquote>
+            <p>
+              “For the next eight weeks, I will mentor one junior engineer
+              during code reviews by leaving at least two explanatory comments
+              per review, and I will ask them whether the feedback was clear and
+              helpful.”
+            </p>
+          </blockquote>
+          <p>
+            This creates measurable leverage — not busyness, not volume.
+            Leverage.
+          </p>
+        </section>
 
-    <section>
-      <h2>The Three Most Common Goal-Setting Mistakes</h2>
-      <ol>
-        <li>
-          <strong>Outcome-only goals</strong><br />
-          “I want to get promoted.” Promotion is not a behavior.
-        </li>
-        <li>
-          <strong>Identity-based goals</strong><br />
-          “I want to be more strategic.” Strategy shows up in decisions, tradeoffs, and communication.
-        </li>
-        <li>
-          <strong>No feedback loop</strong><br />
-          If you never measure or revisit your goal, it disappears.
-        </li>
-      </ol>
-      <p>
-        Growth requires observable behavior and feedback.
-      </p>
-    </section>
+        <section>
+          <h2>The Three Most Common Goal-Setting Mistakes</h2>
+          <ol>
+            <li>
+              <strong>Outcome-only goals</strong>
+              <br />
+              “I want to get promoted.” Promotion is not a behavior.
+            </li>
+            <li>
+              <strong>Identity-based goals</strong>
+              <br />
+              “I want to be more strategic.” Strategy shows up in decisions,
+              tradeoffs, and communication.
+            </li>
+            <li>
+              <strong>No feedback loop</strong>
+              <br />
+              If you never measure or revisit your goal, it disappears.
+            </li>
+          </ol>
+          <p>Growth requires observable behavior and feedback.</p>
+        </section>
 
-    <section>
-      <h2>A Simple Template You Can Use</h2>
-      <p>
-        If you’re not sure how to structure your next growth experiment, try this:
-      </p>
-      <blockquote>
-        <p>
-          Over the next ___ weeks, I will practice ___ behavior, measure it by ___, because it aligns with ___ expectation.
-        </p>
-      </blockquote>
-      <p>
-        Example:
-      </p>
-      <blockquote>
-        <p>
-          Over the next eight weeks, I will lead two cross-team technical discussions and ask for feedback on how clearly I framed tradeoffs,
-          because staff-level expectations include influencing across teams.
-        </p>
-      </blockquote>
-      <p>
-        That’s clear. That’s measurable. That’s aligned.
-      </p>
-    </section>
+        <section>
+          <h2>A Simple Template You Can Use</h2>
+          <p>
+            If you’re not sure how to structure your next growth experiment, try
+            this:
+          </p>
+          <blockquote>
+            <p>
+              Over the next ___ weeks, I will practice ___ behavior, measure it
+              by ___, because it aligns with ___ expectation.
+            </p>
+          </blockquote>
+          <p>Example:</p>
+          <blockquote>
+            <p>
+              Over the next eight weeks, I will lead two cross-team technical
+              discussions and ask for feedback on how clearly I framed
+              tradeoffs, because staff-level expectations include influencing
+              across teams.
+            </p>
+          </blockquote>
+          <p>That’s clear. That’s measurable. That’s aligned.</p>
+        </section>
 
-    <section>
-      <h2>Growth Is Iterative</h2>
-      <p>
-        You don’t need ten goals. You need one or two deliberate growth experiments at a time.
-      </p>
-      <p>
-        Run them for six to eight weeks. Measure. Reflect. Adjust.
-      </p>
-      <p>
-        Engineering careers don’t stall because of lack of effort. They stall because of lack of specificity.
-      </p>
-      <p>
-        Turn feedback into behavior. Turn behavior into measurable practice. Turn practice into progress.
-      </p>
-    </section>
+        <section>
+          <h2>Growth Is Iterative</h2>
+          <p>
+            You don’t need ten goals. You need one or two deliberate growth
+            experiments at a time.
+          </p>
+          <p>Run them for six to eight weeks. Measure. Reflect. Adjust.</p>
+          <p>
+            Engineering careers don’t stall because of lack of effort. They
+            stall because of lack of specificity.
+          </p>
+          <p>
+            Turn feedback into behavior. Turn behavior into measurable practice.
+            Turn practice into progress.
+          </p>
+        </section>
 
-    <footer>
-      <p>
-        If you found this helpful, you can watch the full episode on setting SMART goals for software engineers on my YouTube channel,
-        where I walk through these examples in more detail.
-      </p>
-    </footer>
-  </article>)
+        <footer>
+          <p>
+            If you found this helpful, you can watch the full episode on setting
+            SMART goals for software engineers on my YouTube channel, where I
+            walk through these examples in more detail.
+          </p>
+        </footer>
+      </article>
+    ),
   },
-  {episode: 5,
-    dateCreated: '2026-03-05',
+  {
+    episode: 5,
+    dateCreated: "2026-03-05",
     title: "How to Give Feedback:",
-    body: ( <article>
-    <header>
-      <h1>That Actually Helps as a Software Engineer</h1>
-      <p>
-        Most engineers do not struggle with noticing problems.
-      </p>
-      <p>
-        We notice unclear design docs. We notice risky shortcuts. We notice when
-        priorities feel confusing or when communication is not landing well.
-      </p>
-      <p>
-        The hard part is not seeing the issue.
-      </p>
-      <p>
-        The hard part is saying something in a way that actually helps.
-      </p>
-      <p>
-        Poorly delivered feedback creates defensiveness. Well-delivered feedback
-        creates improvement.
-      </p>
-      <p>
-        And when the goal is helping someone grow, even critical feedback can be
-        a form of kindness.
-      </p>
-      <p>
-        Avoiding feedback may feel polite in the moment, but it often leaves
-        people stuck. Thoughtful feedback helps people improve.
-      </p>
-      <p>
-        In software engineering, that matters a lot.
-      </p>
-    </header>
+    body: (
+      <article>
+        <header>
+          <h1>That Actually Helps as a Software Engineer</h1>
+          <p>Most engineers do not struggle with noticing problems.</p>
+          <p>
+            We notice unclear design docs. We notice risky shortcuts. We notice
+            when priorities feel confusing or when communication is not landing
+            well.
+          </p>
+          <p>The hard part is not seeing the issue.</p>
+          <p>The hard part is saying something in a way that actually helps.</p>
+          <p>
+            Poorly delivered feedback creates defensiveness. Well-delivered
+            feedback creates improvement.
+          </p>
+          <p>
+            And when the goal is helping someone grow, even critical feedback
+            can be a form of kindness.
+          </p>
+          <p>
+            Avoiding feedback may feel polite in the moment, but it often leaves
+            people stuck. Thoughtful feedback helps people improve.
+          </p>
+          <p>In software engineering, that matters a lot.</p>
+        </header>
 
-    <section>
-      <h2>The Core Pattern</h2>
-      <p>
-        Whether you are giving feedback to a peer, to someone who reports to
-        you, or upward to your manager, the same basic pattern applies.
-      </p>
-      <p>Good feedback is:</p>
-      <ul>
-        <li>Specific</li>
-        <li>Focused on behavior or work</li>
-        <li>Future-oriented</li>
-      </ul>
-      <p>
-        It should help someone understand what happened, why it mattered, and
-        what they can do differently next time.
-      </p>
-    </section>
+        <section>
+          <h2>The Core Pattern</h2>
+          <p>
+            Whether you are giving feedback to a peer, to someone who reports to
+            you, or upward to your manager, the same basic pattern applies.
+          </p>
+          <p>Good feedback is:</p>
+          <ul>
+            <li>Specific</li>
+            <li>Focused on behavior or work</li>
+            <li>Future-oriented</li>
+          </ul>
+          <p>
+            It should help someone understand what happened, why it mattered,
+            and what they can do differently next time.
+          </p>
+        </section>
 
-    <section>
-      <h2>Peer-to-Peer Feedback</h2>
-      <p>
-        Peer feedback is one of the most common forms of feedback engineers give.
-      </p>
-      <p>
-        It might happen in a code review, in a design discussion, or in the way
-        a teammate communicates during a project.
-      </p>
-      <p>
-        The first mindset to bring into peer feedback is this:
-        <strong>assume positive intent.</strong>
-      </p>
-      <p>
-        Most engineers are not being careless on purpose. They may be moving
-        quickly, juggling priorities, or optimizing for something different than
-        you are.
-      </p>
-      <p>
-        Assuming positive intent helps you separate the person from the behavior.
-        That matters.
-      </p>
-      <p>
-        Instead of saying:
-      </p>
-      <blockquote>
-        <p>You always miss edge cases.</p>
-      </blockquote>
-      <p>
-        You might say:
-      </p>
-      <blockquote>
-        <p>
-          In the last two PRs, I noticed a few edge cases were not covered.
-          Would it help to add a quick checklist before merging?
-        </p>
-      </blockquote>
-      <p>
-        That version is more useful because it focuses on observable behavior,
-        references a concrete pattern, and suggests a path forward.
-      </p>
-      <p>
-        A simple structure that works well is:
-      </p>
-      <ul>
-        <li><strong>Observation</strong></li>
-        <li><strong>Impact</strong></li>
-        <li><strong>Suggestion</strong></li>
-      </ul>
-      <p>For example:</p>
-      <blockquote>
-        <p>
-          In yesterday’s design meeting, we moved past tradeoffs pretty quickly.
-          I think that left a few open questions. Maybe next time we could spend
-          a few minutes explicitly listing pros and cons.
-        </p>
-      </blockquote>
-      <p>
-        This is the kind of feedback that improves collaboration instead of
-        creating tension.
-      </p>
-    </section>
+        <section>
+          <h2>Peer-to-Peer Feedback</h2>
+          <p>
+            Peer feedback is one of the most common forms of feedback engineers
+            give.
+          </p>
+          <p>
+            It might happen in a code review, in a design discussion, or in the
+            way a teammate communicates during a project.
+          </p>
+          <p>
+            The first mindset to bring into peer feedback is this:
+            <strong>assume positive intent.</strong>
+          </p>
+          <p>
+            Most engineers are not being careless on purpose. They may be moving
+            quickly, juggling priorities, or optimizing for something different
+            than you are.
+          </p>
+          <p>
+            Assuming positive intent helps you separate the person from the
+            behavior. That matters.
+          </p>
+          <p>Instead of saying:</p>
+          <blockquote>
+            <p>You always miss edge cases.</p>
+          </blockquote>
+          <p>You might say:</p>
+          <blockquote>
+            <p>
+              In the last two PRs, I noticed a few edge cases were not covered.
+              Would it help to add a quick checklist before merging?
+            </p>
+          </blockquote>
+          <p>
+            That version is more useful because it focuses on observable
+            behavior, references a concrete pattern, and suggests a path
+            forward.
+          </p>
+          <p>A simple structure that works well is:</p>
+          <ul>
+            <li>
+              <strong>Observation</strong>
+            </li>
+            <li>
+              <strong>Impact</strong>
+            </li>
+            <li>
+              <strong>Suggestion</strong>
+            </li>
+          </ul>
+          <p>For example:</p>
+          <blockquote>
+            <p>
+              In yesterday’s design meeting, we moved past tradeoffs pretty
+              quickly. I think that left a few open questions. Maybe next time
+              we could spend a few minutes explicitly listing pros and cons.
+            </p>
+          </blockquote>
+          <p>
+            This is the kind of feedback that improves collaboration instead of
+            creating tension.
+          </p>
+        </section>
 
-    <section>
-      <h2>Manager-to-Report Feedback</h2>
-      <p>
-        Feedback changes when you are giving it as a manager.
-      </p>
-      <p>
-        In this case, power flows downward. Your words carry more weight, which
-        means your feedback can either create clarity or create fear.
-      </p>
-      <p>
-        One of the most important things a manager can do is separate the person
-        from the behavior.
-      </p>
-      <p>
-        Assume positive intent about the individual while being honest about the
-        work.
-      </p>
-      <p>
-        Instead of saying:
-      </p>
-      <blockquote>
-        <p>You need to be more senior.</p>
-      </blockquote>
-      <p>
-        Try something like:
-      </p>
-      <blockquote>
-        <p>
-          In the last two design discussions, the tradeoffs were not clearly
-          articulated. I’d like you to focus on calling those out more
-          explicitly in future discussions.
-        </p>
-      </blockquote>
-      <p>
-        That version is more effective because it is about behavior, not
-        identity.
-      </p>
-      <p>
-        It also makes the path forward visible.
-      </p>
-      <p>
-        Vague feedback like “communicate better” rarely helps someone grow.
-        Specific feedback does.
-      </p>
-      <p>For example:</p>
-      <blockquote>
-        <p>
-          In the last two sprint demos, risks were not mentioned. Going forward,
-          I’d like you to include a short risk summary at the end of each demo.
-        </p>
-      </blockquote>
-      <p>
-        This connects the feedback to observable behavior and gives the other
-        person something clear to practice.
-      </p>
-      <p>
-        For managers, one more principle matters a lot:
-      </p>
-      <p>
-        <strong>Praise publicly. Correct privately.</strong>
-      </p>
-      <p>
-        Psychological safety matters, especially when authority is involved.
-      </p>
-    </section>
+        <section>
+          <h2>Manager-to-Report Feedback</h2>
+          <p>Feedback changes when you are giving it as a manager.</p>
+          <p>
+            In this case, power flows downward. Your words carry more weight,
+            which means your feedback can either create clarity or create fear.
+          </p>
+          <p>
+            One of the most important things a manager can do is separate the
+            person from the behavior.
+          </p>
+          <p>
+            Assume positive intent about the individual while being honest about
+            the work.
+          </p>
+          <p>Instead of saying:</p>
+          <blockquote>
+            <p>You need to be more senior.</p>
+          </blockquote>
+          <p>Try something like:</p>
+          <blockquote>
+            <p>
+              In the last two design discussions, the tradeoffs were not clearly
+              articulated. I’d like you to focus on calling those out more
+              explicitly in future discussions.
+            </p>
+          </blockquote>
+          <p>
+            That version is more effective because it is about behavior, not
+            identity.
+          </p>
+          <p>It also makes the path forward visible.</p>
+          <p>
+            Vague feedback like “communicate better” rarely helps someone grow.
+            Specific feedback does.
+          </p>
+          <p>For example:</p>
+          <blockquote>
+            <p>
+              In the last two sprint demos, risks were not mentioned. Going
+              forward, I’d like you to include a short risk summary at the end
+              of each demo.
+            </p>
+          </blockquote>
+          <p>
+            This connects the feedback to observable behavior and gives the
+            other person something clear to practice.
+          </p>
+          <p>For managers, one more principle matters a lot:</p>
+          <p>
+            <strong>Praise publicly. Correct privately.</strong>
+          </p>
+          <p>
+            Psychological safety matters, especially when authority is involved.
+          </p>
+        </section>
 
-    <section>
-      <h2>Managing Up</h2>
-      <p>
-        Upward feedback is often the most uncomfortable kind to give, but it is
-        also one of the most valuable professional skills an engineer can
-        develop.
-      </p>
-      <p>
-        The goal here is not criticism. The goal is alignment.
-      </p>
-      <p>
-        When you give feedback upward, frame it around shared outcomes.
-      </p>
-      <p>
-        Instead of saying:
-      </p>
-      <blockquote>
-        <p>You’re unclear in meetings.</p>
-      </blockquote>
-      <p>
-        You could say:
-      </p>
-      <blockquote>
-        <p>
-          In planning meetings, I sometimes leave unsure about the priority
-          order. Would it help if we summarized the top priorities at the end?
-        </p>
-      </blockquote>
-      <p>
-        This shifts the conversation from blame to improvement.
-      </p>
-      <p>
-        It focuses on impact, suggests a practical adjustment, and keeps the
-        conversation tied to a shared goal.
-      </p>
-      <p>
-        Managing up also requires judgment.
-      </p>
-      <ul>
-        <li>Consider the timing.</li>
-        <li>Consider the relationship.</li>
-        <li>Consider whether your tone is calm and constructive.</li>
-      </ul>
-      <p>
-        Upward feedback delivered emotionally rarely lands well. Upward feedback
-        delivered thoughtfully often builds trust and respect.
-      </p>
-    </section>
+        <section>
+          <h2>Managing Up</h2>
+          <p>
+            Upward feedback is often the most uncomfortable kind to give, but it
+            is also one of the most valuable professional skills an engineer can
+            develop.
+          </p>
+          <p>The goal here is not criticism. The goal is alignment.</p>
+          <p>When you give feedback upward, frame it around shared outcomes.</p>
+          <p>Instead of saying:</p>
+          <blockquote>
+            <p>You’re unclear in meetings.</p>
+          </blockquote>
+          <p>You could say:</p>
+          <blockquote>
+            <p>
+              In planning meetings, I sometimes leave unsure about the priority
+              order. Would it help if we summarized the top priorities at the
+              end?
+            </p>
+          </blockquote>
+          <p>This shifts the conversation from blame to improvement.</p>
+          <p>
+            It focuses on impact, suggests a practical adjustment, and keeps the
+            conversation tied to a shared goal.
+          </p>
+          <p>Managing up also requires judgment.</p>
+          <ul>
+            <li>Consider the timing.</li>
+            <li>Consider the relationship.</li>
+            <li>Consider whether your tone is calm and constructive.</li>
+          </ul>
+          <p>
+            Upward feedback delivered emotionally rarely lands well. Upward
+            feedback delivered thoughtfully often builds trust and respect.
+          </p>
+        </section>
 
-    <section>
-      <h2>Why Positive Intent Matters</h2>
-      <p>
-        In every direction of feedback, it helps to assume positive intent.
-      </p>
-      <p>
-        That does not mean ignoring problems. It means resisting the urge to
-        turn a work issue into a character judgment.
-      </p>
-      <p>
-        It is much easier to give helpful feedback when you start from the idea
-        that the other person is trying, but something in their behavior or work
-        is not landing the way they intend.
-      </p>
-      <p>
-        That mindset keeps the conversation human and keeps your feedback more
-        accurate.
-      </p>
-    </section>
+        <section>
+          <h2>Why Positive Intent Matters</h2>
+          <p>
+            In every direction of feedback, it helps to assume positive intent.
+          </p>
+          <p>
+            That does not mean ignoring problems. It means resisting the urge to
+            turn a work issue into a character judgment.
+          </p>
+          <p>
+            It is much easier to give helpful feedback when you start from the
+            idea that the other person is trying, but something in their
+            behavior or work is not landing the way they intend.
+          </p>
+          <p>
+            That mindset keeps the conversation human and keeps your feedback
+            more accurate.
+          </p>
+        </section>
 
-    <section>
-      <h2>A Simple Question to Ask Yourself First</h2>
-      <p>
-        Before giving feedback, pause and ask yourself one question:
-      </p>
-      <blockquote>
-        <p>
-          Is my goal to help this person improve, or to relieve my own
-          frustration?
-        </p>
-      </blockquote>
-      <p>
-        That distinction matters.
-      </p>
-      <p>
-        When the goal is improvement, your tone becomes calmer, your language
-        becomes more specific, and your feedback becomes more useful.
-      </p>
-      <p>
-        When the goal is just emotional release, that usually shows too.
-      </p>
-    </section>
+        <section>
+          <h2>A Simple Question to Ask Yourself First</h2>
+          <p>Before giving feedback, pause and ask yourself one question:</p>
+          <blockquote>
+            <p>
+              Is my goal to help this person improve, or to relieve my own
+              frustration?
+            </p>
+          </blockquote>
+          <p>That distinction matters.</p>
+          <p>
+            When the goal is improvement, your tone becomes calmer, your
+            language becomes more specific, and your feedback becomes more
+            useful.
+          </p>
+          <p>
+            When the goal is just emotional release, that usually shows too.
+          </p>
+        </section>
 
-    <section>
-      <h2>Closing Thought</h2>
-      <p>
-        Giving feedback well is a multiplier.
-      </p>
-      <p>
-        It improves code quality, team clarity, trust, and growth.
-      </p>
-      <p>
-        Peer feedback builds collaboration. Manager feedback builds development.
-        Upward feedback builds alignment.
-      </p>
-      <p>
-        Across all three, the pattern stays the same:
-      </p>
-      <ul>
-        <li>Be specific</li>
-        <li>Focus on behavior or work</li>
-        <li>Keep the conversation aimed at the future</li>
-      </ul>
-      <p>
-        Feedback does not have to be harsh to be honest. And when the aim is
-        growth, even critical feedback can be an act of kindness.
-      </p>
-    </section>
-  </article>)
+        <section>
+          <h2>Closing Thought</h2>
+          <p>Giving feedback well is a multiplier.</p>
+          <p>It improves code quality, team clarity, trust, and growth.</p>
+          <p>
+            Peer feedback builds collaboration. Manager feedback builds
+            development. Upward feedback builds alignment.
+          </p>
+          <p>Across all three, the pattern stays the same:</p>
+          <ul>
+            <li>Be specific</li>
+            <li>Focus on behavior or work</li>
+            <li>Keep the conversation aimed at the future</li>
+          </ul>
+          <p>
+            Feedback does not have to be harsh to be honest. And when the aim is
+            growth, even critical feedback can be an act of kindness.
+          </p>
+        </section>
+      </article>
+    ),
   },
-  { episode: 6,
-  dateCreated: "2026-03-17",
-  title: "Why You're Not Getting Better Feedback as a Software Engineer",
-body: (
-    <article>
-    <header>
-      <h1>Focus on Professional Basics to Ensure Better Feedback</h1>
-      <p>
-        A lot of engineers want feedback that helps them grow.
-      </p>
-      <p>
-        They want advice about system design. Architecture decisions. Technical leadership.
-      </p>
-      <p>
-        But sometimes the feedback they get sounds like this:
-      </p>
-      <blockquote>
-        <p>“Please communicate earlier.”<br/>
-        “Please follow through.”<br/>
-        “Please show up on time.”</p>
-      </blockquote>
-      <p>
-        And that can feel frustrating.
-      </p>
-      <p>
-        But here’s the reality:
-      </p>
-      <p>
-        <strong>If the professional basics aren’t solid, that’s where the feedback will stay.</strong>
-      </p>
-      <p>
-        Not because managers want to nitpick — but because reliability comes first.
-      </p>
-    </header>
+  {
+    episode: 6,
+    dateCreated: "2026-03-17",
+    title: "Why You're Not Getting Better Feedback as a Software Engineer",
+    body: (
+      <article>
+        <header>
+          <h1>Focus on Professional Basics to Ensure Better Feedback</h1>
+          <p>A lot of engineers want feedback that helps them grow.</p>
+          <p>
+            They want advice about system design. Architecture decisions.
+            Technical leadership.
+          </p>
+          <p>But sometimes the feedback they get sounds like this:</p>
+          <blockquote>
+            <p>
+              “Please communicate earlier.”
+              <br />
+              “Please follow through.”
+              <br />
+              “Please show up on time.”
+            </p>
+          </blockquote>
+          <p>And that can feel frustrating.</p>
+          <p>But here’s the reality:</p>
+          <p>
+            <strong>
+              If the professional basics aren’t solid, that’s where the feedback
+              will stay.
+            </strong>
+          </p>
+          <p>
+            Not because managers want to nitpick — but because reliability comes
+            first.
+          </p>
+        </header>
 
-    <section>
-      <h2>The Hidden Filter for Growth Feedback</h2>
-      <p>
-        Every manager is making a quiet assessment.
-      </p>
-      <p>
-        Not just about your technical ability — but about your professional reliability.
-      </p>
-      <p>
-        They’re asking questions like:
-      </p>
-      <ul>
-        <li>Can I trust this person to follow through?</li>
-        <li>Will they communicate when something goes wrong?</li>
-        <li>Will they show up prepared?</li>
-      </ul>
-      <p>
-        Because before someone can grow into larger responsibilities, they have to demonstrate consistency.
-      </p>
-      <p>
-        You don’t build advanced engineering skills on top of an unreliable foundation.
-      </p>
-    </section>
+        <section>
+          <h2>The Hidden Filter for Growth Feedback</h2>
+          <p>Every manager is making a quiet assessment.</p>
+          <p>
+            Not just about your technical ability — but about your professional
+            reliability.
+          </p>
+          <p>They’re asking questions like:</p>
+          <ul>
+            <li>Can I trust this person to follow through?</li>
+            <li>Will they communicate when something goes wrong?</li>
+            <li>Will they show up prepared?</li>
+          </ul>
+          <p>
+            Because before someone can grow into larger responsibilities, they
+            have to demonstrate consistency.
+          </p>
+          <p>
+            You don’t build advanced engineering skills on top of an unreliable
+            foundation.
+          </p>
+        </section>
 
-    <section>
-      <h2>Professional Basics Engineers Should Lock Down</h2>
-      <p>
-        There are a handful of fundamentals that remove friction from your work.
-      </p>
-      <p>
-        They’re not glamorous — but they make a huge difference.
-      </p>
+        <section>
+          <h2>Professional Basics Engineers Should Lock Down</h2>
+          <p>
+            There are a handful of fundamentals that remove friction from your
+            work.
+          </p>
+          <p>They’re not glamorous — but they make a huge difference.</p>
 
-      <h3>Reliability</h3>
-      <p>
-        Reliability is about doing what you say you’ll do.
-      </p>
-      <ul>
-        <li>Show up on time to meetings</li>
-        <li>Meet commitments when you can</li>
-        <li>Communicate early if something slips</li>
-      </ul>
-      <p>
-        Things will go wrong. That’s normal.
-      </p>
-      <p>
-        What matters is whether people find out early — or after the damage is already done.
-      </p>
-      <p>
-        Reliable engineers make other people’s work easier.
-      </p>
+          <h3>Reliability</h3>
+          <p>Reliability is about doing what you say you’ll do.</p>
+          <ul>
+            <li>Show up on time to meetings</li>
+            <li>Meet commitments when you can</li>
+            <li>Communicate early if something slips</li>
+          </ul>
+          <p>Things will go wrong. That’s normal.</p>
+          <p>
+            What matters is whether people find out early — or after the damage
+            is already done.
+          </p>
+          <p>Reliable engineers make other people’s work easier.</p>
 
-      <h3>Communication</h3>
-      <p>
-        Good engineers communicate. Great engineers communicate before they’re asked.
-      </p>
-      <ul>
-        <li>Provide updates on work</li>
-        <li>Call out blockers early</li>
-        <li>Follow up when something needs attention</li>
-      </ul>
-      <p>
-        Silence creates uncertainty.
-      </p>
-      <p>
-        And uncertainty forces your manager to spend time tracking you down instead of helping you grow.
-      </p>
+          <h3>Communication</h3>
+          <p>
+            Good engineers communicate. Great engineers communicate before
+            they’re asked.
+          </p>
+          <ul>
+            <li>Provide updates on work</li>
+            <li>Call out blockers early</li>
+            <li>Follow up when something needs attention</li>
+          </ul>
+          <p>Silence creates uncertainty.</p>
+          <p>
+            And uncertainty forces your manager to spend time tracking you down
+            instead of helping you grow.
+          </p>
 
-      <h3>Ownership</h3>
-      <p>
-        Ownership is about closing loops.
-      </p>
-      <p>
-        If you take something on, people should feel confident it will get done.
-      </p>
-      <ul>
-        <li>Don’t disappear when things get complicated</li>
-        <li>Ask questions early</li>
-        <li>Stay engaged until the work is complete</li>
-      </ul>
-      <p>
-        Ownership builds trust faster than almost anything else.
-      </p>
+          <h3>Ownership</h3>
+          <p>Ownership is about closing loops.</p>
+          <p>
+            If you take something on, people should feel confident it will get
+            done.
+          </p>
+          <ul>
+            <li>Don’t disappear when things get complicated</li>
+            <li>Ask questions early</li>
+            <li>Stay engaged until the work is complete</li>
+          </ul>
+          <p>Ownership builds trust faster than almost anything else.</p>
 
-      <h3>Self-Awareness</h3>
-      <p>
-        Self-awareness shows up in small ways.
-      </p>
-      <ul>
-        <li>How you respond to feedback</li>
-        <li>How you participate in meetings</li>
-        <li>How you collaborate with teammates</li>
-      </ul>
-      <p>
-        A useful question to ask yourself:
-      </p>
-      <blockquote>
-        <p>“How am I showing up right now?”</p>
-      </blockquote>
-      <p>
-        Professionalism is often about awareness, not just effort.
-      </p>
+          <h3>Self-Awareness</h3>
+          <p>Self-awareness shows up in small ways.</p>
+          <ul>
+            <li>How you respond to feedback</li>
+            <li>How you participate in meetings</li>
+            <li>How you collaborate with teammates</li>
+          </ul>
+          <p>A useful question to ask yourself:</p>
+          <blockquote>
+            <p>“How am I showing up right now?”</p>
+          </blockquote>
+          <p>Professionalism is often about awareness, not just effort.</p>
 
-      <h3>Presence</h3>
-      <p>
-        Presence doesn’t mean talking the most.
-      </p>
-      <p>
-        It means participating constructively.
-      </p>
-      <ul>
-        <li>Being engaged</li>
-        <li>Contributing when it matters</li>
-        <li>Managing visible frustration in discussions</li>
-      </ul>
-      <p>
-        Engineers care deeply about their work — that’s a strength.
-      </p>
-      <p>
-        Professionalism means channeling that energy productively.
-      </p>
-    </section>
+          <h3>Presence</h3>
+          <p>Presence doesn’t mean talking the most.</p>
+          <p>It means participating constructively.</p>
+          <ul>
+            <li>Being engaged</li>
+            <li>Contributing when it matters</li>
+            <li>Managing visible frustration in discussions</li>
+          </ul>
+          <p>Engineers care deeply about their work — that’s a strength.</p>
+          <p>Professionalism means channeling that energy productively.</p>
+        </section>
 
-    <section>
-      <h2>Why These Basics Matter</h2>
-      <p>
-        Managers tend to place engineers into one of two mental categories.
-      </p>
+        <section>
+          <h2>Why These Basics Matter</h2>
+          <p>
+            Managers tend to place engineers into one of two mental categories.
+          </p>
 
-      <h3>Reliable Professionals</h3>
-      <ul>
-        <li>Follow through</li>
-        <li>Communicate clearly</li>
-        <li>Handle the basics well</li>
-      </ul>
-      <p>
-        Managers think:
-      </p>
-      <blockquote>
-        <p>“This is someone I can invest in.”<br/>
-        “This person is ready for more responsibility.”</p>
-      </blockquote>
+          <h3>Reliable Professionals</h3>
+          <ul>
+            <li>Follow through</li>
+            <li>Communicate clearly</li>
+            <li>Handle the basics well</li>
+          </ul>
+          <p>Managers think:</p>
+          <blockquote>
+            <p>
+              “This is someone I can invest in.”
+              <br />
+              “This person is ready for more responsibility.”
+            </p>
+          </blockquote>
 
-      <h3>High Maintenance</h3>
-      <p>
-        These engineers may be technically capable — but require constant reminders about basics.
-      </p>
-      <p>
-        That consumes attention.
-      </p>
-      <p>
-        And attention is limited.
-      </p>
-      <p>
-        If your manager is spending time reminding you about fundamentals, they can’t spend that same time helping you grow.
-      </p>
-    </section>
+          <h3>High Maintenance</h3>
+          <p>
+            These engineers may be technically capable — but require constant
+            reminders about basics.
+          </p>
+          <p>That consumes attention.</p>
+          <p>And attention is limited.</p>
+          <p>
+            If your manager is spending time reminding you about fundamentals,
+            they can’t spend that same time helping you grow.
+          </p>
+        </section>
 
-    <section>
-      <h2>The Payoff</h2>
-      <p>
-        When the professional basics are solid, something important happens.
-      </p>
-      <p>
-        The feedback shifts.
-      </p>
-      <p>
-        Instead of hearing:
-      </p>
-      <blockquote>
-        <p>“Please communicate earlier.”<br/>
-        “Please follow through.”</p>
-      </blockquote>
-      <p>
-        You start hearing:
-      </p>
-      <blockquote>
-        <p>“Let’s talk about your system design.”<br/>
-        “Let’s talk about influence.”<br/>
-        “Let’s talk about leadership.”</p>
-      </blockquote>
-      <p>
-        That’s the kind of feedback that actually moves your career forward.
-      </p>
-      <p>
-        Professional discipline creates the space for real growth.
-      </p>
-    </section>
+        <section>
+          <h2>The Payoff</h2>
+          <p>
+            When the professional basics are solid, something important happens.
+          </p>
+          <p>The feedback shifts.</p>
+          <p>Instead of hearing:</p>
+          <blockquote>
+            <p>
+              “Please communicate earlier.”
+              <br />
+              “Please follow through.”
+            </p>
+          </blockquote>
+          <p>You start hearing:</p>
+          <blockquote>
+            <p>
+              “Let’s talk about your system design.”
+              <br />
+              “Let’s talk about influence.”
+              <br />
+              “Let’s talk about leadership.”
+            </p>
+          </blockquote>
+          <p>
+            That’s the kind of feedback that actually moves your career forward.
+          </p>
+          <p>Professional discipline creates the space for real growth.</p>
+        </section>
 
-    <section>
-      <h2>Closing Thought</h2>
-      <p>
-        Professional basics aren’t glamorous.
-      </p>
-      <p>
-        But they’re powerful.
-      </p>
-      <p>
-        Reliability. Communication. Ownership. Self-awareness.
-      </p>
-      <p>
-        When those are handled well, people trust you with bigger challenges.
-      </p>
-      <p>
-        And that’s where real career growth begins.
-      </p>
-    </section>
+        <section>
+          <h2>Closing Thought</h2>
+          <p>Professional basics aren’t glamorous.</p>
+          <p>But they’re powerful.</p>
+          <p>Reliability. Communication. Ownership. Self-awareness.</p>
+          <p>
+            When those are handled well, people trust you with bigger
+            challenges.
+          </p>
+          <p>And that’s where real career growth begins.</p>
+        </section>
 
-    <footer>
-      <p>
-        If you found this helpful, consider subscribing for more practical insights on career growth in software engineering.
-      </p>
-    </footer>
-  </article>)
-  }
+        <footer>
+          <p>
+            If you found this helpful, consider subscribing for more practical
+            insights on career growth in software engineering.
+          </p>
+        </footer>
+      </article>
+    ),
+  },
+  {
+    episode: 7,
+    dateCreated: "2026-3-25",
+    title:
+      "Grow as a Software Engineer Through Collaboration (Pair Programming, Code Reviews, Retros)",
+    body: (
+      <article>
+        <header>
+          <h1>Collaboration Is How Influence Starts</h1>
+          <p>
+            Most developers focus on getting better at coding. But the ones who
+            grow the fastest usually get better at collaborating. That is where
+            influence starts.
+          </p>
+        </header>
+
+        <section>
+          <h2>Pair Programming Builds Trust</h2>
+          <p>
+            I once worked with an engineer who would let me try ideas she did
+            not think would work.
+          </p>
+          <p>
+            She could have shut them down immediately, but she did not. She
+            would just say, “Let’s try it.”
+          </p>
+          <p>
+            Sometimes those ideas actually worked. Most of the time, they did
+            not. But every single time, we both learned more from the
+            experience.
+          </p>
+          <p>
+            That changed how I think about pair programming. Pairing is not just
+            about getting to the answer faster. It is about creating space to
+            learn, explore, and understand a problem together.
+          </p>
+          <p>
+            Good collaboration is not about always being right. It is about
+            helping the team learn faster.
+          </p>
+        </section>
+
+        <section>
+          <h2>Code Reviews Build Better Thinking</h2>
+          <p>
+            One of my mentors had a habit that stuck with me. Instead of just
+            telling me what to change in a code review, he would ask questions.
+          </p>
+          <p>He would ask things like:</p>
+          <ul>
+            <li>What is the time complexity here?</li>
+            <li>Can this be more readable?</li>
+            <li>What tradeoffs are you making?</li>
+            <li>What does this do to memory usage?</li>
+          </ul>
+          <p>
+            At first, I wanted direct answers. Over time, I realized he was
+            doing something much more valuable. He was pushing me to think
+            deeper about my solutions.
+          </p>
+          <p>
+            Great code reviews do not just improve the code in front of you.
+            They improve the engineer writing it.
+          </p>
+        </section>
+
+        <section>
+          <h2>Retrospectives Create Alignment</h2>
+          <p>
+            Retros are not just a place to talk about what went well and what
+            did not. I have seen retros lead to working agreements that made
+            collaboration much easier.
+          </p>
+          <p>Those agreements covered things like:</p>
+          <ul>
+            <li>How quickly we review pull requests</li>
+            <li>When we pair and when we work solo</li>
+            <li>How we communicate blockers</li>
+          </ul>
+          <p>
+            They were small shifts, but they had a big impact. Clear agreements
+            make it easier for teams to work together without confusion or
+            friction.
+          </p>
+          <p>
+            That is one of the most underrated outcomes of a good retro:
+            alignment.
+          </p>
+        </section>
+
+        <section>
+          <h2>Leadership Starts Here</h2>
+          <p>
+            When you consistently help people learn, think deeper, and work
+            better together, people start to trust you more.
+          </p>
+          <p>That trust becomes influence.</p>
+          <p>And that influence is often where leadership begins.</p>
+          <p>
+            Leadership is not just a title. It is a pattern of behaviors. And
+            collaboration is one of the clearest places that pattern shows up.
+          </p>
+        </section>
+
+        <footer>
+          <p>
+            Pair once. Leave one thoughtful review. Suggest one improvement in
+            your next retro.
+          </p>
+          <p>Small actions. Big impact.</p>
+        </footer>
+      </article>
+    ),
+  },
 ];
 
 export default blogList;
