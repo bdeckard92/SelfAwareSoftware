@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { questions, LEVELS } from '../../utils/assessmentQuestions';
+import { questions, LEVELS, DIMENSION_INSIGHTS } from '../../utils/assessmentQuestions';
 import './AssessmentQuiz.css';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -146,9 +146,19 @@ export default function AssessmentQuiz() {
     return Object.entries(grouped).map(([dim, levels]) => {
       const avg = levels.reduce((s, l) => s + l, 0) / levels.length;
       const key = getLevelKey(avg);
-      return { dimension: dim, key, label: LEVELS[key].label, color: LEVELS[key].color };
+      return { dimension: dim, key, label: LEVELS[key].label, color: LEVELS[key].color, avg };
     });
   }, [answers]);
+
+  const topDim = useMemo(() => {
+    if (!dimensionBreakdown.length) return null;
+    return [...dimensionBreakdown].sort((a, b) => b.avg - a.avg)[0];
+  }, [dimensionBreakdown]);
+
+  const bottomDim = useMemo(() => {
+    if (!dimensionBreakdown.length) return null;
+    return [...dimensionBreakdown].sort((a, b) => a.avg - b.avg)[0];
+  }, [dimensionBreakdown]);
 
   const spriteBoxShadow = `${SPRITE_UPPER}, ${walkFrame === 0 ? LEGS_FRAME_0 : LEGS_FRAME_1}`;
 
@@ -169,6 +179,13 @@ export default function AssessmentQuiz() {
               <span key={d} className="dimension-chip">{d}</span>
             ))}
           </div>
+          <p className="quiz-disclaimer">
+            ⚠️ This quiz is for fun and self-reflection only. It is not a performance
+            evaluation, an official assessment, or evidence of your level. Please do
+            not bring your results to your manager as justification for a raise or
+            promotion. Your boss will not be impressed and may even ask why you're
+            playing this silly game and not working on that feature... 😅
+          </p>
           <button className="pixel-btn" onClick={() => setPhase('quiz')}>
             ▶ START
           </button>
@@ -223,6 +240,33 @@ export default function AssessmentQuiz() {
             {LEVELS[currentLevelKey].label}
           </div>
           <p className="result-description">{LEVELS[currentLevelKey].description}</p>
+
+          {topDim && bottomDim && (
+            <div className="result-insights">
+              <div className="insight-card insight-card--strength">
+                <div className="insight-card-header">
+                  <span className="insights-heading pixel-text">⚡ STRENGTH</span>
+                  <span className="insight-dim-label" style={{ color: topDim.color }}>
+                    {topDim.dimension}
+                  </span>
+                </div>
+                <p className="insight-text">
+                  {DIMENSION_INSIGHTS[topDim.dimension][topDim.key].strength}
+                </p>
+              </div>
+              <div className="insight-card insight-card--opportunity">
+                <div className="insight-card-header">
+                  <span className="insights-heading pixel-text">🎯 OPPORTUNITY</span>
+                  <span className="insight-dim-label" style={{ color: bottomDim.color }}>
+                    {bottomDim.dimension}
+                  </span>
+                </div>
+                <p className="insight-text">
+                  {DIMENSION_INSIGHTS[bottomDim.dimension][bottomDim.key].growthTip}
+                </p>
+              </div>
+            </div>
+          )}
 
           <div className="result-breakdown">
             <span className="breakdown-heading pixel-text">BREAKDOWN BY DIMENSION</span>

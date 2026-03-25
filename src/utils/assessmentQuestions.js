@@ -25,6 +25,100 @@ export const LEVELS = {
   },
 };
 
+// Per-dimension, per-level: what you're doing well + how to grow
+export const DIMENSION_INSIGHTS = {
+  Execution: {
+    SE1: {
+      strength: "You complete well-defined tasks reliably and raise blockers quickly — that responsiveness is a genuine asset.",
+      growthTip: "Before escalating ambiguity, write a short summary of what you do and don't know. It sharpens your question, shows initiative, and speeds up the answer you get back.",
+    },
+    SE2: {
+      strength: "You deliver features end-to-end and handle moderate ambiguity without stalling — that's a key differentiator at this level.",
+      growthTip: "Own the delivery plan, not just the code. Start estimating proactively, flagging risks early, and scoping down when needed rather than waiting to be asked.",
+    },
+    SENIOR: {
+      strength: "You lead complex work, manage ambiguity, and keep delivery moving across a team — not just for yourself.",
+      growthTip: "Build repeatable delivery habits for your team. Lightweight planning templates, a shared definition of done, or a sequencing approach others can learn from — these compound over time.",
+    },
+    STAFF: {
+      strength: "You drive cross-team execution and align technical direction with business outcomes — a rare and high-leverage combination.",
+      growthTip: "Make your delivery instincts teachable. Document your sequencing decisions, run planning retrospectives, and develop the same cross-team execution muscle in the senior engineers around you.",
+    },
+  },
+  Ownership: {
+    SE1: {
+      strength: "You own your assigned tasks and escalate blockers quickly — building a reputation for reliability early is more valuable than most people realize.",
+      growthTip: "Start asking 'what could go wrong?' before marking anything done. Anticipating edge cases before review catches them is the first step toward broader ownership.",
+    },
+    SE2: {
+      strength: "You own features end-to-end and anticipate common issues before they surface — that proactive mindset sets you apart.",
+      growthTip: "Look for recurring pain points in your area that nobody owns. Naming the problem and proposing a fix — without being asked — is how you move toward system-level ownership.",
+    },
+    SENIOR: {
+      strength: "You own systems, proactively surface risks, and drive problems to resolution without needing direction — that's what the team relies on you for.",
+      growthTip: "Work on distributing ownership rather than holding it. The best senior engineers make accountability the default behavior around them, not a single point they personally carry.",
+    },
+    STAFF: {
+      strength: "You own outcomes and problems at an organizational level, keeping both business and technical dimensions in view — that's genuinely hard to do.",
+      growthTip: "Build cultures of ownership rather than exerting it yourself. Create norms, incentives, and postmortem habits that make accountability the default across your org.",
+    },
+  },
+  Collaboration: {
+    SE1: {
+      strength: "You participate actively when invited and absorb feedback well — being coachable early is more valuable than most engineers realize.",
+      growthTip: "Share your work before it's finished. A doc, a sketch, or a Slack message while it's still in progress builds trust faster than polished delivery.",
+    },
+    SE2: {
+      strength: "You contribute meaningfully to reviews and help teammates when you can — that collaborative energy matters more than you might think.",
+      growthTip: "Pick one person and invest in their growth intentionally. Consistent, targeted mentorship builds your collaboration skills faster than scattered help-when-asked interactions.",
+    },
+    SENIOR: {
+      strength: "You mentor others and actively improve team practices — your team is noticeably better because of how you show up.",
+      growthTip: "Look for collaboration friction between teams, not just within yours. Cross-team misalignment is where senior engineers can have their highest-leverage impact — and get noticed beyond their immediate team.",
+    },
+    STAFF: {
+      strength: "You build alignment across groups and enable entire teams — not just individuals — to do their best work.",
+      growthTip: "Work on reducing your own involvement over time. The best staff-level collaborators create systems and norms that work without them present — that's how you scale impact.",
+    },
+  },
+  'Technical Judgment': {
+    SE1: {
+      strength: "You follow established patterns reliably and focus on the 'how' — building a strong foundation before forming strong opinions is exactly right.",
+      growthTip: "Start asking 'why' more. Why is this pattern used here? What problem does it solve? What breaks if we do it differently? Understanding the reasoning accelerates judgment faster than just accumulating experience.",
+    },
+    SE2: {
+      strength: "You make sound basic tradeoffs and default toward maintainable solutions — that pragmatic instinct is the right foundation to build on.",
+      growthTip: "Document your technical decisions as you make them. A two-sentence decision log sharpens your thinking and builds a habit that becomes critical at senior level.",
+    },
+    SENIOR: {
+      strength: "You analyze tradeoffs deeply and design systems other people can maintain and extend — that's the core of the role.",
+      growthTip: "Use 'could someone else own and extend this without me in a year?' as a quality bar. The answer to that question shapes architecture decisions in ways that matter long after you've moved on.",
+    },
+    STAFF: {
+      strength: "You think at a systems level and balance short vs. long-term tradeoffs across teams and time horizons — that perspective is rare.",
+      growthTip: "Make your technical judgment teachable. Write down your mental models, host open architecture reviews, and actively develop others' judgment — your influence compounds through people.",
+    },
+  },
+  Influence: {
+    SE1: {
+      strength: "You absorb knowledge from those around you and contribute organically — that openness to learning is the seed of real influence.",
+      growthTip: "Write one thing down per week: a TIL, a short decision note, a doc. Written communication compounds faster than spoken communication. Consistent small output builds influence over time.",
+    },
+    SE2: {
+      strength: "You share what you know and are starting to shape how your team thinks and works — that's real influence, even if it doesn't feel like it yet.",
+      growthTip: "Propose one improvement to team process or tooling this quarter, then track whether it gets adopted. Influence is a practice — the feedback loop between proposal, adoption, and outcome is how you develop it.",
+    },
+    SENIOR: {
+      strength: "You shape team decisions and raise engineering standards — others look to you when direction is unclear, and that trust is earned and valuable.",
+      growthTip: "Build influence outside your immediate team. Present at a guild, contribute to another team's planning, write something your broader org reads. Lateral reach is what separates senior from staff.",
+    },
+    STAFF: {
+      strength: "You influence without authority and set technical and cultural direction at an organizational level — that's what makes you a genuine multiplier.",
+      growthTip: "Invest in the next generation of senior engineers becoming multipliers themselves. Your influence compounds most through people, not through your own direct output.",
+    },
+  },
+};
+
 // level: 1=SE1, 2=SE2, 3=Senior, 4=Staff
 export const questions = [
   // ── Execution ────────────────────────────────────────────────────────────
