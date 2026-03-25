@@ -17,23 +17,31 @@ const videos = [
     title: "How to Recieve Improvement Feedback as a Software Engineer",
     datePublished: "2026-02-17",
   },
-  { vUrl: "https://www.youtube.com/embed/7jtgs9XpnXQ?si=oS4UtUyfWl6IWRmm",
+  {
+    vUrl: "https://www.youtube.com/embed/7jtgs9XpnXQ?si=oS4UtUyfWl6IWRmm",
     id: 4,
-    title: "From Feedback to Action: Setting SMART Goals as a Software Engeiner",
-    datePublished: "2026-02-25"
-   },
-    { vUrl: "https://www.youtube.com/embed/1MKHPY14MNk?si=CTGVzDjnsPkv43bl",
+    title:
+      "From Feedback to Action: Setting SMART Goals as a Software Engeiner",
+    datePublished: "2026-02-25",
+  },
+  {
+    vUrl: "https://www.youtube.com/embed/1MKHPY14MNk?si=CTGVzDjnsPkv43bl",
     id: 5,
     title: "How to Give Feedback That Actually Helps as a Software Engineer.",
-    datePublished: "2026-03-05"
-   },
-   {
+    datePublished: "2026-03-05",
+  },
+  {
     vUrl: "https://www.youtube.com/embed/5W5sKq-BshQ?si=MTARpRIfWQJnKOy2",
     id: 6,
     title: "Why You’re Not Getting Better Feedback as a Software Engineer",
-    datePublished: "2026-03-17"
-   },
-  
+    datePublished: "2026-03-17",
+  },
+  {
+    vUrl: "https://www.youtube.com/embed/vUUzaVHOSnQ?si=UwxL1jyVOQFxONHQ",
+    id: 7,
+    title: "Grow as a Software Engineer Through Collaboration",
+    datePublished: "2026-03-25",
+  },
 ];
 
 export default videos;
