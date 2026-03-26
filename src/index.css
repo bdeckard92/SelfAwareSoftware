@@ -80,3 +80,47 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+/* ─── Tooltip Styles ──────────────────────────────────────────────────────── */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5em 0.75em;
+  background-color: rgba(33, 53, 71, 0.95);
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 400;
+  white-space: nowrap;
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-tooltip]:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: rgba(33, 53, 71, 0.95);
+  z-index: 1000;
+  pointer-events: none;
+}
+
+body[data-theme='dark'] [data-tooltip]:hover::after {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #242424;
+}
+
+body[data-theme='dark'] [data-tooltip]:hover::before {
+  border-top-color: rgba(255, 255, 255, 0.95);
+}

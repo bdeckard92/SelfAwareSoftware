@@ -1,4 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import Blog from '../blog/Blog';
 
 vi.mock('../../utils/blogs.jsx', () => ({
@@ -46,20 +47,26 @@ vi.mock('../../utils/blogs.jsx', () => ({
 }));
 
 describe('Blog', () => {
+  const renderBlog = () => render(
+    <MemoryRouter>
+      <Blog />
+    </MemoryRouter>,
+  );
+
   it('renders the blog page title', () => {
-    render(<Blog />);
+    renderBlog();
 
     expect(screen.getByRole('heading', { name: /blog posts/i })).toBeInTheDocument();
   });
 
   it('happy path: renders a blog keyword search input', () => {
-    render(<Blog />);
+    renderBlog();
 
     expect(screen.getByRole('searchbox', { name: /search blog posts/i })).toBeInTheDocument();
   });
 
   it('happy path: filters blog cards by title keyword', () => {
-    render(<Blog />);
+    renderBlog();
     const searchInput = screen.getByRole('searchbox', { name: /search blog posts/i });
 
     fireEvent.change(searchInput, { target: { value: 'react' } });
@@ -69,7 +76,7 @@ describe('Blog', () => {
   });
 
   it('happy path: filters blog cards by body keyword', () => {
-    render(<Blog />);
+    renderBlog();
     const searchInput = screen.getByRole('searchbox', { name: /search blog posts/i });
 
     fireEvent.change(searchInput, { target: { value: 'body two' } });
@@ -79,7 +86,7 @@ describe('Blog', () => {
   });
 
   it('sad path: sanitizes script-like input while still allowing safe search text', () => {
-    render(<Blog />);
+    renderBlog();
     const searchInput = screen.getByRole('searchbox', { name: /search blog posts/i });
 
     fireEvent.change(searchInput, { target: { value: '<script>react</script>' } });
@@ -89,7 +96,7 @@ describe('Blog', () => {
   });
 
   it('happy path: toggles blog sort order from newest to oldest to oldest to newest', () => {
-    render(<Blog />);
+    renderBlog();
 
     const beforeToggle = screen.getAllByRole('heading', { level: 2 }).map((heading) => heading.textContent);
     expect(beforeToggle).toEqual([
@@ -109,7 +116,7 @@ describe('Blog', () => {
   });
 
   it('sad path: shows no blog cards for a non-matching keyword', () => {
-    render(<Blog />);
+    renderBlog();
     const searchInput = screen.getByRole('searchbox', { name: /search blog posts/i });
 
     fireEvent.change(searchInput, { target: { value: 'does-not-exist' } });
