@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Blog.css";
 import blogList from "../../utils/blogs.jsx";
 import { filterByKeywords } from "../../utils/filterByKeywords";
@@ -7,13 +8,8 @@ import KeywordSearch from "../search/KeywordSearch";
 import SortToggle from "../sort/SortToggle";
 
 const Blog = () => {
-  const [blogToShow, setBlogToShow] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [sortOrder, setSortOrder] = useState(SORT_ORDER.NEWEST);
-
-  const showBlogBody = (id) => {
-    setBlogToShow((prev) => (prev === id ? null : id));
-  };
 
   const formatPublishDate = (dateCreated) => {
     if (!dateCreated) {
@@ -62,17 +58,15 @@ const Blog = () => {
       <h2 className="blog-card-title">{blog.title}</h2>
       <p className="blog-card-subtitle">{getBlogSubtitle(blog.body)}</p>
       <p className="blog-card-date">Published {formatPublishDate(blog.dateCreated)}</p>
-      <button
+      <Link
         className="blog-card-toggle"
-        type="button"
-        onClick={() => showBlogBody(blog.episode)}
+        to={`/blog/${blog.episode}`}
+        title="Open this post on its own page"
       >
-        {blogToShow === blog.episode ? "Hide Post" : "Read Post"}
-      </button>
+        Read Post
+      </Link>
     </section>
   ));
-
-  const activeBlog = blogList.find((blog) => blog.episode === blogToShow);
 
   return (
     <>
@@ -85,7 +79,6 @@ const Blog = () => {
       />
       <SortToggle value={sortOrder} onChange={setSortOrder} />
       <div className="blog-list">{showBlogCards}</div>
-      {activeBlog && <section className="blog-reader">{activeBlog.body}</section>}
     </>
   );
 };
