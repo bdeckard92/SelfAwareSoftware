@@ -28,56 +28,71 @@ const getCharacterPosition = (score) => {
   return MILESTONE_POSITIONS[idx] + frac * (MILESTONE_POSITIONS[idx + 1] - MILESTONE_POSITIONS[idx]);
 };
 
-// ── Pixel-art sprite (box-shadow technique, 5 px/cell, 8 cols × 14 rows) ────
-//   col offset = col * 5px,  row offset = row * 5px
-//   Grid layout:
-//   row 0-1 : hair top
-//   row 2-5 : head/face (eyes at col 3, col 5 in row 3)
-//   row 6-9 : shirt / arms
-//   row 10  : waist
-//   row 11-12: legs  (differ between frames)
-//   row 13  : boots  (differ between frames)
+// ── 16-bit style sprite (box-shadow + tile map) ─────────────────────────────
+// 4 px per tile, 12 cols x 18 rows. More colors and shading gives a 16-bit vibe.
+const TILE = 4;
 
-const SPRITE_UPPER = [
-  // Hair #5C3317
-  '10px 0px 0 0 #5C3317','15px 0px 0 0 #5C3317','20px 0px 0 0 #5C3317','25px 0px 0 0 #5C3317',
-  '5px 5px 0 0 #5C3317','10px 5px 0 0 #5C3317','15px 5px 0 0 #5C3317','20px 5px 0 0 #5C3317','25px 5px 0 0 #5C3317','30px 5px 0 0 #5C3317',
-  '5px 10px 0 0 #5C3317','30px 10px 0 0 #5C3317',
-  '5px 15px 0 0 #5C3317','30px 15px 0 0 #5C3317',
-  '5px 20px 0 0 #5C3317','30px 20px 0 0 #5C3317',
-  // Skin #F4C08A
-  '10px 10px 0 0 #F4C08A','15px 10px 0 0 #F4C08A','20px 10px 0 0 #F4C08A','25px 10px 0 0 #F4C08A',
-  '10px 15px 0 0 #F4C08A','20px 15px 0 0 #F4C08A',
-  '10px 20px 0 0 #F4C08A','15px 20px 0 0 #F4C08A','20px 20px 0 0 #F4C08A','25px 20px 0 0 #F4C08A',
-  '10px 25px 0 0 #F4C08A','15px 25px 0 0 #F4C08A','20px 25px 0 0 #F4C08A','25px 25px 0 0 #F4C08A',
-  // Eyes #1a1a2e
-  '15px 15px 0 0 #1a1a2e','25px 15px 0 0 #1a1a2e',
-  // Shirt collar row 6 #2196F3
-  '5px 30px 0 0 #2196F3','10px 30px 0 0 #2196F3','15px 30px 0 0 #2196F3','20px 30px 0 0 #2196F3','25px 30px 0 0 #2196F3','30px 30px 0 0 #2196F3',
-  // Arms row 7 #2196F3 (full width)
-  '0px 35px 0 0 #2196F3','5px 35px 0 0 #2196F3','10px 35px 0 0 #2196F3','15px 35px 0 0 #2196F3','20px 35px 0 0 #2196F3','25px 35px 0 0 #2196F3','30px 35px 0 0 #2196F3','35px 35px 0 0 #2196F3',
-  // Torso rows 8-9 #1565C0
-  '5px 40px 0 0 #1565C0','10px 40px 0 0 #1565C0','15px 40px 0 0 #1565C0','20px 40px 0 0 #1565C0','25px 40px 0 0 #1565C0','30px 40px 0 0 #1565C0',
-  '5px 45px 0 0 #1565C0','10px 45px 0 0 #1565C0','15px 45px 0 0 #1565C0','20px 45px 0 0 #1565C0','25px 45px 0 0 #1565C0','30px 45px 0 0 #1565C0',
-  // Waist row 10 #1A237E
-  '10px 50px 0 0 #1A237E','15px 50px 0 0 #1A237E','20px 50px 0 0 #1A237E','25px 50px 0 0 #1A237E',
-].join(', ');
+const SPRITE_PALETTE = {
+  o: '#121826', // outline
+  h: '#3E2A1F', // dark hair
+  H: '#6A4A32', // light hair
+  s: '#DEA672', // skin shade
+  S: '#F4C191', // skin highlight
+  e: '#0E1726', // eyes
+  j: '#1F4B99', // jacket dark
+  J: '#3A77D2', // jacket light
+  a: '#F2C14E', // tie/accent
+  p: '#1E243D', // pants dark
+  P: '#2E3555', // pants light
+  b: '#2B1B12', // boots dark
+  B: '#4A2A1D', // boots light
+};
 
-// Frame 0 — legs apart
-const LEGS_FRAME_0 = [
-  '5px 55px 0 0 #1A237E','10px 55px 0 0 #1A237E','25px 55px 0 0 #1A237E','30px 55px 0 0 #1A237E',
-  '5px 60px 0 0 #1A237E','10px 60px 0 0 #1A237E','25px 60px 0 0 #1A237E','30px 60px 0 0 #1A237E',
-  '0px 65px 0 0 #1B1B1B','5px 65px 0 0 #1B1B1B','10px 65px 0 0 #1B1B1B',
-  '25px 65px 0 0 #1B1B1B','30px 65px 0 0 #1B1B1B','35px 65px 0 0 #1B1B1B',
-].join(', ');
+const toBoxShadow = (rows, startRow = 0) => rows
+  .flatMap((row, rowIdx) => [...row].flatMap((tile, colIdx) => {
+    const color = SPRITE_PALETTE[tile];
+    if (!color) return [];
+    return [`${colIdx * TILE}px ${(startRow + rowIdx) * TILE}px 0 0 ${color}`];
+  }))
+  .join(', ');
 
-// Frame 1 — legs together (mid-stride)
-const LEGS_FRAME_1 = [
-  '10px 55px 0 0 #1A237E','15px 55px 0 0 #1A237E','20px 55px 0 0 #1A237E','25px 55px 0 0 #1A237E',
-  '10px 60px 0 0 #1A237E','15px 60px 0 0 #1A237E','20px 60px 0 0 #1A237E','25px 60px 0 0 #1A237E',
-  '5px 65px 0 0 #1B1B1B','10px 65px 0 0 #1B1B1B','15px 65px 0 0 #1B1B1B',
-  '20px 65px 0 0 #1B1B1B','25px 65px 0 0 #1B1B1B','30px 65px 0 0 #1B1B1B',
-].join(', ');
+const UPPER_ROWS = [
+  '..oooooo....',
+  '.ohHHHHHo...',
+  '.ohHHHHHHoo.',
+  '.ohsSSSSsho.',
+  'ooosSeeSSsoo',
+  'oosSSSSSSsoo',
+  'ooojJaaJjooo',
+  '.oojJJJJjoo.',
+  '.ojJJJJJJjo.',
+  '.ojJjJJjJjo.',
+  '.osJjJJjJso.',
+  '..opPPPPpo..',
+  '..oPPPPPPo..',
+];
+
+// Legs apart
+const LEGS_ROWS_0 = [
+  '.oPPo..oPPo.',
+  '.oPPo..oPPo.',
+  '.oPPo..oPPo.',
+  'ooBBo..oBBoo',
+  'obbb....bbbo',
+];
+
+// Legs crossing
+const LEGS_ROWS_1 = [
+  '..oPPPPPPo..',
+  '..oPPPPPPo..',
+  '..ooPPPPoo..',
+  '.ooBBoBBoo..',
+  '.obbbbbbbo..',
+];
+
+const SPRITE_UPPER = toBoxShadow(UPPER_ROWS);
+const LEGS_FRAME_0 = toBoxShadow(LEGS_ROWS_0, UPPER_ROWS.length);
+const LEGS_FRAME_1 = toBoxShadow(LEGS_ROWS_1, UPPER_ROWS.length);
 
 const MILESTONES = [
   { key: 'SE1',    label: 'SE I',   pos: MILESTONE_POSITIONS[0] },

@@ -448,26 +448,26 @@
   color: #2196F3;
 }
 
-/* ─── 8-bit character ─────────────────────────────────────────────────────── */
+/* ─── 16-bit character ────────────────────────────────────────────────────── */
 
 .character-wrapper {
   position: absolute;
   bottom: 29px; /* sit on the ground line */
   transform: translateX(-50%);
   transition: left 0.55s steps(11);
-  width: 40px;
-  height: 75px;
+  width: 48px;
+  height: 72px;
 }
 
 /* Inner div isolates vertical animation from the left transition */
 .character-bob {
-  width: 40px;
-  height: 75px;
+  width: 48px;
+  height: 72px;
 }
 
 @keyframes characterBob {
   0%   { transform: translateY(0); }
-  50%  { transform: translateY(-8px); }
+  50%  { transform: translateY(-6px); }
 }
 
 .character--walking .character-bob {
@@ -493,8 +493,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   background: transparent;
   overflow: visible;
 }
