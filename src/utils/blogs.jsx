@@ -1570,6 +1570,315 @@ const blogList = [
       </article>
     ),
   },
+  {
+    episode: 8,
+    dateCreated: '2026-04-01',
+    title: "Asking Better Questions to Grow as a Software Engineer",
+    body: (
+      <article>
+        <header>
+        <h1>How Better Questions Help Software Engineers Grow</h1>
+        <p>
+          Most engineers think asking questions is a junior skill.
+        </p>
+        <p>
+          It is not.
+        </p>
+        <p>
+          In fact, the way you ask questions is one of the clearest signals of
+          the level you are operating at.
+        </p>
+        <p>
+          Early in your career, questions help you build clarity. Later, they
+          help you show ownership. At senior and staff levels, they do even more
+          than that. They shape decisions, improve thinking, and create
+          alignment.
+        </p>
+        <p>
+          Asking questions is not something you grow out of as an engineer.
+          It is something you grow <em>into</em>.
+        </p>
+      </header>
+      <section>
+        <h2>Questions Are Part of Your Feedback Loop</h2>
+        <p>
+          If you think about it, questions are part of your feedback loop.
+        </p>
+        <p>
+          Better questions lead to better signal. Better signal leads to better
+          decisions. And over time, that is what drives growth.
+        </p>
+        <p>
+          The problem is that the kind of question that helps at one level often
+          does not work at the next.
+        </p>
+        <p>
+          As your role changes, your questions need to change with it.
+        </p>
+      </section>
+      <section>
+        <h2>At the Junior Level, Questions Create Clarity</h2>
+        <p>
+          At the junior level, your goal is clarity.
+        </p>
+        <p>
+          You are learning systems, patterns, tools, and team expectations. Good
+          questions reduce ambiguity before it turns into confusion or rework.
+        </p>
+        <p>Questions at this level often sound like:</p>
+        <ul>
+          <li>Can you walk me through how this part of the system works?</li>
+          <li>What does success look like for this task?</li>
+          <li>What should I prioritize if I run into multiple issues?</li>
+        </ul>
+        <p>
+          These are strong questions because they surface gaps early and help
+          create forward progress.
+        </p>
+        <p>
+          One of the most common mistakes at this level is waiting too long to
+          ask. Engineers get stuck for hours, sometimes days, because they do
+          not want to interrupt someone or appear inexperienced.
+        </p>
+        <p>
+          But asking early is not a lack of skill. It is a form of ownership.
+        </p>
+      </section>
+      <section>
+        <h2>At the Mid-Level, Questions Show Ownership</h2>
+        <p>
+          As you move into a mid-level role, the expectation shifts.
+        </p>
+        <p>
+          Now your goal is not just to complete tasks. It is to own outcomes.
+        </p>
+        <p>
+          That means your questions should start carrying more context and more
+          independent thinking.
+        </p>
+        <p>Instead of asking:</p>
+        <blockquote>
+          <p>What should I do?</p>
+        </blockquote>
+        <p>You start asking things like:</p>
+        <ul>
+          <li>Here is the approach I am thinking about. Does this align?</li>
+          <li>Are there edge cases I should consider before I start?</li>
+          <li>What risks should I be aware of here?</li>
+        </ul>
+        <p>
+          The difference is subtle, but important.
+        </p>
+        <p>
+          You are no longer asking someone else to do the thinking for you.
+          You are bringing a point of view. You are thinking ahead. You are
+          reducing the load on the people around you.
+        </p>
+        <p>
+          The common mistake at this level is asking open-ended questions that
+          push the work of thinking onto someone else.
+        </p>
+        <p>
+          Mid-level engineers create momentum. They do not create unnecessary
+          drag.
+        </p>
+      </section>
+      <section>
+         <h2>At the senior level, the goal shifts again.</h2> 
+        
+        <p>
+          Now it is about leverage.
+        </p>
+        <p>
+          Senior engineers are not evaluated only on what they personally
+          deliver. They are evaluated on how their thinking improves outcomes
+          for the team.
+        </p>
+        <p>That is why senior-level questions become more strategic:</p>
+        <ul>
+          <li>What problem are we actually trying to solve here?</li>
+          <li>What tradeoffs are we making with this approach?</li>
+          <li>How will this decision affect the team in six months?</li>
+        </ul>
+        <p>
+          These questions do more than unblock immediate work. They shape the
+          quality of decisions. They help teams avoid preventable problems. They
+          bring hidden assumptions into the open.
+        </p>
+        <p>
+          One of the biggest mistakes senior engineers make is answering too
+          quickly.
+        </p>
+        <p>
+          You see a problem. You know the likely solution. You jump in.
+        </p>
+        <p>
+          But sometimes the higher-leverage move is not to give the answer. It
+          is to ask the question that helps everyone see the problem more
+          clearly.
+        </p>
+        <p>
+          Senior engineers do not just solve problems. They clarify them.
+        </p>
+      </section>
+      <section>
+        <h2>At the Staff Level, Questions Create Direction</h2>
+        <p>
+          At the staff level, the shift is even bigger.
+        </p>
+        <p>
+          Now your goal is direction.
+        </p>
+        <p>
+          You are operating in ambiguity. You are working across teams. And your
+          questions help create alignment where none exists yet.
+        </p>
+        <p>Questions at this level often sound like:</p>
+        <ul>
+          <li>What are we optimizing for here?</li>
+          <li>Where are teams currently misaligned?</li>
+          <li>What decision would make this easier for everyone involved?</li>
+        </ul>
+        <p>
+          These are not just questions about a task or feature. They are
+          questions about the system around the work.
+        </p>
+        <p>
+          Staff engineers use questions to create clarity across boundaries,
+          align incentives, and help teams move in the same direction.
+        </p>
+      </section>
+      <section>
+        <h2>The Trap of Leading Questions</h2>
+        <p>
+          There is an important trap that often shows up at the senior and staff
+          level.
+        </p>
+        <p>
+          Leading questions.
+        </p>
+        <p>
+          This is when a question is not really a question at all. It is an
+          instruction disguised as one.
+        </p>
+        <p>For example:</p>
+        <blockquote>
+          <p>Have you tried just caching the result here?</p>
+        </blockquote>
+        <p>
+          That sounds collaborative. But it is usually just direction with a
+          question mark at the end.
+        </p>
+        <p>
+          The problem is subtle.
+        </p>
+        <ul>
+          <li>It removes thinking from the other person</li>
+          <li>It creates dependency</li>
+          <li>It limits learning</li>
+        </ul>
+        <p>
+          It also sends a quiet message: <em>I already know the answer.</em>
+        </p>
+        <p>
+          Sometimes that is true. But if your goal is to help someone grow, that
+          approach can reduce your long-term impact.
+        </p>
+      </section>
+ <section>
+        <h2>A Better Way to Guide Thinking</h2>
+        <p>
+          Instead of jumping to a disguised solution, try guiding the thinking
+          process.
+        </p>
+        <p>Questions like these are usually more helpful:</p>
+        <ul>
+          <li>What options have you considered so far?</li>
+          <li>What tradeoffs did you see between those options?</li>
+          <li>What do you think would happen if this scaled?</li>
+        </ul>
+        <p>
+          Now you are not just solving the immediate problem.
+        </p>
+        <p>
+          You are helping someone strengthen their reasoning. That creates a very
+          different kind of leverage.
+        </p>
+      </section>
+      <section>
+        <h2>A Simple Framework: The Question Ladder</h2>
+        <p>
+          If you want something practical, use a simple question ladder.
+        </p>
+        <p>
+          Whether you are helping someone else or thinking through a problem
+          yourself, move through these steps in order:
+        </p>
+        <ol>
+          <li>
+            <strong>Clarify understanding</strong><br />
+            How are you thinking about this problem?
+          </li>
+          <li>
+            <strong>Explore options</strong><br />
+            What approaches have you considered?
+          </li>
+          <li>
+            <strong>Evaluate tradeoffs</strong><br />
+            What are the pros and cons of each?
+          </li>
+          <li>
+            <strong>Guide if needed</strong><br />
+            What might happen if we tried this approach?
+          </li>
+        </ol>
+        <p>
+          Most people skip straight to the last step.
+        </p>
+        <p>
+          But the real value often comes from the earlier ones. That is where
+          understanding improves, judgment develops, and better decisions start
+          to form.
+        </p>
+      </section>
+      <section>
+        <h2>A Useful Reflection</h2>
+        <p>
+          If you are an individual engineer, ask yourself:
+        </p>
+        <blockquote>
+          <p>Am I asking questions to get answers, or to improve my thinking?</p>
+        </blockquote>
+        <p>
+          And if you are a senior or staff engineer, ask yourself:
+        </p>
+        <blockquote>
+          <p>Am I teaching, or just directing?</p>
+        </blockquote>
+        <p>
+          Those are not the same thing.
+        </p>
+      </section>
+      <footer>
+        <h2>Closing Thought</h2>
+        <p>
+          The goal is not to ask more questions.
+        </p>
+        <p>
+          It is to ask better ones.
+        </p>
+        <p>
+          Because the way you ask questions shapes how people learn, how
+          decisions get made, and how teams grow.
+        </p>
+        <p>
+          Over time, that makes asking better questions a much higher-leverage
+          skill than most engineers realize.
+        </p>
+      </footer>
+      </article>
+    )
+  }
 ];
 
 export default blogList;
