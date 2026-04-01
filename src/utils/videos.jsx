@@ -1,3 +1,5 @@
+import { data } from "react-router-dom";
+
 const videos = [
   {
     vUrl: "https://www.youtube.com/embed/vVGseqGSU8Y?si=-2u1cjtSWIXVcBiz",
@@ -41,6 +43,12 @@ const videos = [
     id: 7,
     title: "Grow as a Software Engineer Through Collaboration",
     datePublished: "2026-03-25",
+  },
+  {
+    vUrl: "https://www.youtube.com/embed/RMy2W6D4MmY?si=UNESkqj47T8r50XI",
+    id: 8,
+    title: "Ask Better Questions to Grow as a Software Engineer",
+    datePublished: "2026-04-01"
   },
 ];
 
