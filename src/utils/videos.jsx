@@ -50,6 +50,10 @@ const videos = [
     title: "Ask Better Questions to Grow as a Software Engineer",
     datePublished: "2026-04-01"
   },
+  {vUrl: "https://www.youtube.com/embed/LmENz8UFVo8?si=t3O5VcgF7GgxfZC6",
+    id: 9,
+    title: "The Real Reason You're Not Getting More Responsibility as a Software Engineer",
+  datePublished: "2026-04-15"}
 ];
 
 export default videos;

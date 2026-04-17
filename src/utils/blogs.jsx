@@ -1878,6 +1878,272 @@ const blogList = [
       </footer>
       </article>
     )
+  },
+  {
+      episode: 9,
+  dateCreated: "2026-4-15",
+  title: "The Real Reason You're Not Getting More Responsibility as a Software Engineer",
+  body: (<article>
+  <header>
+    <h1>How to Build Trust as a Software Engineer</h1>
+    <p>
+      Most software engineers assume career growth is mostly about technical skill.
+    </p>
+    <p>
+      Write better code. Learn more systems. Make better decisions.
+    </p>
+    <p>
+      And those things matter.
+    </p>
+    <p>
+      But if you look closely at who gets trusted with bigger work, who gets more ownership,
+      and who gets invited into more important conversations, it is usually not just about skill.
+    </p>
+    <p>
+      It is about trust.
+    </p>
+  </header>
+
+  <section>
+    <h2>Trust Is Not One Thing</h2>
+    <p>
+      Trust can feel abstract, but it is more useful to think of it as a set of signals.
+    </p>
+    <p>
+      One framework from <em>The Thin Book of Trust</em> breaks trust into four components:
+    </p>
+    <ul>
+      <li>Care</li>
+      <li>Sincerity</li>
+      <li>Reliability</li>
+      <li>Competence</li>
+    </ul>
+    <p>
+      This is a helpful model because it turns trust into something observable.
+    </p>
+    <p>
+      Instead of asking, <em>“Do people trust me?”</em>, you can ask:
+    </p>
+    <blockquote>
+      <p>Which dimension of trust am I strongest in, and which one might be holding me back?</p>
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Care: Do You Have Other People’s Best Interests in Mind?</h2>
+    <p>
+      In software engineering, care shows up in how you work with other people.
+    </p>
+    <p>
+      Do you help unblock teammates? Do you share context freely? Do you give feedback to help
+      someone improve, or just to prove that you are right?
+    </p>
+    <p>
+      Care is what makes collaboration feel safe.
+    </p>
+    <p>
+      When care is missing, even technically correct behavior can damage trust.
+    </p>
+    <p>
+      You can be right and still make people less likely to rely on you.
+    </p>
+  </section>
+
+  <section>
+    <h2>Sincerity: Do You Mean What You Say?</h2>
+    <p>
+      Sincerity is about alignment between your words and your intent.
+    </p>
+    <p>
+      Are you clear? Are you honest about risks? Are you willing to say “I don’t know” when you do not know?
+    </p>
+    <p>
+      A lot of trust gets lost here.
+    </p>
+    <p>
+      When someone says a project is “on track” but clearly knows it is slipping, that is not just
+      a planning problem. It is a trust problem.
+    </p>
+    <p>
+      Engineers build sincerity by communicating clearly, speaking honestly, and avoiding the habit
+      of telling people what they want to hear in the moment.
+    </p>
+  </section>
+
+  <section>
+    <h2>Reliability: Do You Do What You Say You Will Do?</h2>
+    <p>
+      Reliability is one of the most visible forms of trust.
+    </p>
+    <p>
+      Do you follow through? Do you communicate early when something changes? Do people have to chase
+      you down for updates, or can they count on you to close loops?
+    </p>
+    <p>
+      Reliability is not about being perfect.
+    </p>
+    <p>
+      Things slip. Priorities change. Projects get messy.
+    </p>
+    <p>
+      Reliability is about consistency and communication.
+    </p>
+    <p>
+      Trust usually breaks less from missed expectations than from silence around missed expectations.
+    </p>
+  </section>
+
+  <section>
+    <h2>Competence: Can People Trust Your Judgment?</h2>
+    <p>
+      Competence is the part most software engineers naturally focus on.
+    </p>
+    <p>
+      It includes technical skill, problem solving, design quality, and judgment.
+    </p>
+    <p>
+      And it matters.
+    </p>
+    <p>
+      But competence alone does not build trust.
+    </p>
+    <p>
+      Most engineers already know they need to improve technically. That is the obvious part.
+      The less obvious part is that many careers stall not because competence is absent,
+      but because the other three dimensions are weak.
+    </p>
+    <p>
+      You can be very strong technically and still not be trusted with bigger opportunities if people
+      are unsure about your care, sincerity, or reliability.
+    </p>
+  </section>
+
+  <section>
+    <h2>Why Engineers Often Overfocus on Competence</h2>
+    <p>
+      Competence feels measurable.
+    </p>
+    <p>
+      You can study. You can practice. You can build things. You can point to code, designs, and systems.
+    </p>
+    <p>
+      The other dimensions feel less concrete, so they are easier to ignore.
+    </p>
+    <p>
+      But that is often where the real growth opportunity is.
+    </p>
+    <p>
+      If you are technically strong but still feel overlooked, under-trusted, or left out of bigger work,
+      the blocker may not be more technical skill.
+    </p>
+    <p>
+      It may be one of the other trust dimensions.
+    </p>
+  </section>
+
+  <section>
+    <h2>A Practical Example</h2>
+    <p>
+      Imagine an engineer misses a deadline.
+    </p>
+    <p>
+      On the surface, that looks like a reliability problem.
+    </p>
+    <p>
+      But if they knew it was slipping and failed to communicate early, it also becomes a sincerity problem.
+    </p>
+    <p>
+      And if teammates had to scramble because of it, it may start to feel like a care problem too.
+    </p>
+    <p>
+      One event can affect multiple components of trust.
+    </p>
+    <p>
+      That is why trust often feels fragile. It is not built in one big moment. It is built, or weakened,
+      by repeated patterns of behavior over time.
+    </p>
+  </section>
+
+  <section>
+    <h2>A Better Reflection Question</h2>
+    <p>
+      Instead of asking:
+    </p>
+    <blockquote>
+      <p>How do I get people to trust me?</p>
+    </blockquote>
+    <p>
+      Try asking:
+    </p>
+    <blockquote>
+      <p>Which of the four components of trust might I be unintentionally weakening?</p>
+    </blockquote>
+    <p>
+      That question is more useful because it leads to action.
+    </p>
+    <p>
+      Maybe you need to follow through more consistently.
+      Maybe you need to communicate more honestly.
+      Maybe you need to invest more in supporting others.
+      Maybe you do need to improve your technical judgment.
+    </p>
+    <p>
+      The key is that trust becomes something you can examine, not just something you hope people feel.
+    </p>
+  </section>
+
+  <section>
+    <h2>Why Trust Matters for Career Growth</h2>
+    <p>
+      Trust is what unlocks opportunity.
+    </p>
+    <p>
+      It affects who gets autonomy, who gets bigger scope, who gets included in decisions,
+      and who people feel comfortable relying on.
+    </p>
+    <p>
+      Career growth is not just about what you can do.
+    </p>
+    <p>
+      It is about what people trust you to do.
+    </p>
+  </section>
+
+  <section>
+    <h2>Closing Thought</h2>
+    <p>
+      Most software engineers naturally work on competence.
+    </p>
+    <p>
+      That is good. You should.
+    </p>
+    <p>
+      But trust is broader than competence.
+    </p>
+    <p>
+      If you want to grow, pay attention to the other three too:
+    </p>
+    <ul>
+      <li>Care</li>
+      <li>Sincerity</li>
+      <li>Reliability</li>
+    </ul>
+    <p>
+      Trust is not built in big steps.
+    </p>
+    <p>
+      It is built through small, consistent behaviors over time.
+    </p>
+  </section>
+
+  <footer>
+    <p>
+      If you found this helpful, consider subscribing for more content on growing as a software engineer
+      — not just technically, but professionally.
+    </p>
+  </footer>
+</article>)
+
   }
 ];
 
